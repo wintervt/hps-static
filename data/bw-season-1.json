@@ -1,0 +1,125 @@
+{
+    "revealedRounds": 2,
+    "players": [
+        { "name": "Advil", "race": "T", "tier": "Top" },
+        { "name": "non", "race": "T", "tier": "Top" },
+        { "name": "Ace", "race": "Z", "tier": "Top" },
+        { "name": "EaGLe", "race": "P", "tier": "Top" },
+        { "name": "vOrti", "race": "Z", "tier": "Top" },
+        { "name": "Fazek", "race": "T", "tier": "Top" },
+        { "name": "WiNtER", "race": "P", "tier": "Mid" },
+        { "name": "Itzak_Rosenberg", "race": "Z", "tier": "Mid" },
+        { "name": "Skzlime", "race": "T", "tier": "Mid" },
+        { "name": "Lynkoln", "race": "Z", "tier": "Mid" },
+        { "name": "Marine", "race": "R", "tier": "Mid" },
+        { "name": "Capybara", "race": "P", "tier": "Mid" },
+        { "name": "Psz", "race": "T", "tier": "Low" },
+        { "name": "Spezza", "race": "Z", "tier": "Low" },
+        { "name": "JuGGer", "race": "Z", "tier": "Low" },
+        { "name": "OwL!", "race": "Z", "tier": "Low" },
+        { "name": "Milkaa", "race": "P", "tier": "Low" },
+        { "name": "JustRoids", "race": "P", "tier": "Low" }
+    ],
+    "roundDates": {
+        "1": "Oct 19 – Oct 25, 2026",
+        "2": "Oct 26 – Nov 1, 2026",
+        "3": "Nov 2 – Nov 8, 2026",
+        "4": "Nov 9 – Nov 15, 2026",
+        "5": "Nov 16 – Nov 22, 2026",
+        "6": "Nov 23 – Nov 29, 2026"
+    },
+    "fixtures": {
+        "1": [
+            { "p1": "Advil", "p2": "Marine", "s1": null, "s2": null },
+            { "p1": "non", "p2": "Skzlime", "s1": null, "s2": null },
+            { "p1": "Ace", "p2": "Itzak_Rosenberg", "s1": null, "s2": null },
+            { "p1": "EaGLe", "p2": "Capybara", "s1": null, "s2": null },
+            { "p1": "vOrti", "p2": "Lynkoln", "s1": null, "s2": null },
+            { "p1": "Fazek", "p2": "WiNtER", "s1": null, "s2": null },
+            { "p1": "Psz", "p2": "Milkaa", "s1": null, "s2": null },
+            { "p1": "Spezza", "p2": "OwL!", "s1": null, "s2": null },
+            { "p1": "JuGGer", "p2": "JustRoids", "s1": null, "s2": null }
+        ],
+        "2": [
+            { "p1": "Advil", "p2": "Fazek", "s1": null, "s2": null },
+            { "p1": "non", "p2": "vOrti", "s1": null, "s2": null },
+            { "p1": "Ace", "p2": "EaGLe", "s1": null, "s2": null },
+            { "p1": "WiNtER", "p2": "Psz", "s1": null, "s2": null },
+            { "p1": "Itzak_Rosenberg", "p2": "Spezza", "s1": null, "s2": null },
+            { "p1": "Skzlime", "p2": "JuGGer", "s1": null, "s2": null },
+            { "p1": "Lynkoln", "p2": "OwL!", "s1": null, "s2": null },
+            { "p1": "Marine", "p2": "Milkaa", "s1": null, "s2": null },
+            { "p1": "Capybara", "p2": "JustRoids", "s1": null, "s2": null }
+        ],
+        "3": [
+            { "p1": "Advil", "p2": "JustRoids", "s1": null, "s2": null },
+            { "p1": "non", "p2": "Milkaa", "s1": null, "s2": null },
+            { "p1": "Ace", "p2": "OwL!", "s1": null, "s2": null },
+            { "p1": "EaGLe", "p2": "JuGGer", "s1": null, "s2": null },
+            { "p1": "vOrti", "p2": "Spezza", "s1": null, "s2": null },
+            { "p1": "Fazek", "p2": "Psz", "s1": null, "s2": null },
+            { "p1": "WiNtER", "p2": "Capybara", "s1": null, "s2": null },
+            { "p1": "Itzak_Rosenberg", "p2": "Marine", "s1": null, "s2": null },
+            { "p1": "Skzlime", "p2": "Lynkoln", "s1": null, "s2": null }
+        ],
+        "4": [
+            { "p1": "Advil", "p2": "Capybara", "s1": null, "s2": null },
+            { "p1": "non", "p2": "Marine", "s1": null, "s2": null },
+            { "p1": "Ace", "p2": "Lynkoln", "s1": null, "s2": null },
+            { "p1": "EaGLe", "p2": "Skzlime", "s1": null, "s2": null },
+            { "p1": "vOrti", "p2": "Itzak_Rosenberg", "s1": null, "s2": null },
+            { "p1": "Fazek", "p2": "WiNtER", "s1": null, "s2": null },
+            { "p1": "Psz", "p2": "JustRoids", "s1": null, "s2": null },
+            { "p1": "Spezza", "p2": "Milkaa", "s1": null, "s2": null },
+            { "p1": "JuGGer", "p2": "OwL!", "s1": null, "s2": null }
+        ],
+        "5": [
+            { "p1": "Advil", "p2": "non", "s1": null, "s2": null },
+            { "p1": "Ace", "p2": "vOrti", "s1": null, "s2": null },
+            { "p1": "EaGLe", "p2": "Fazek", "s1": null, "s2": null },
+            { "p1": "WiNtER", "p2": "Spezza", "s1": null, "s2": null },
+            { "p1": "Itzak_Rosenberg", "p2": "JuGGer", "s1": null, "s2": null },
+            { "p1": "Skzlime", "p2": "OwL!", "s1": null, "s2": null },
+            { "p1": "Lynkoln", "p2": "Milkaa", "s1": null, "s2": null },
+            { "p1": "Marine", "p2": "JustRoids", "s1": null, "s2": null },
+            { "p1": "Capybara", "p2": "Psz", "s1": null, "s2": null }
+        ],
+        "6": [
+            { "p1": "Advil", "p2": "Psz", "s1": null, "s2": null },
+            { "p1": "non", "p2": "Spezza", "s1": null, "s2": null },
+            { "p1": "Ace", "p2": "JuGGer", "s1": null, "s2": null },
+            { "p1": "EaGLe", "p2": "OwL!", "s1": null, "s2": null },
+            { "p1": "vOrti", "p2": "Milkaa", "s1": null, "s2": null },
+            { "p1": "Fazek", "p2": "JustRoids", "s1": null, "s2": null },
+            { "p1": "WiNtER", "p2": "Marine", "s1": null, "s2": null },
+            { "p1": "Itzak_Rosenberg", "p2": "Lynkoln", "s1": null, "s2": null },
+            { "p1": "Skzlime", "p2": "Capybara", "s1": null, "s2": null }
+        ]
+    },
+    "codeSBracket": {
+        "qf": [
+            { "p1": null, "p2": null, "s1": null, "s2": null },
+            { "p1": null, "p2": null, "s1": null, "s2": null },
+            { "p1": null, "p2": null, "s1": null, "s2": null },
+            { "p1": null, "p2": null, "s1": null, "s2": null }
+        ],
+        "sf": [
+            { "p1": null, "p2": null, "s1": null, "s2": null },
+            { "p1": null, "p2": null, "s1": null, "s2": null }
+        ],
+        "gf": { "p1": null, "p2": null, "s1": null, "s2": null }
+    },
+    "codeABracket": {
+        "qf": [
+            { "p1": null, "p2": null, "s1": null, "s2": null },
+            { "p1": null, "p2": null, "s1": null, "s2": null },
+            { "p1": null, "p2": null, "s1": null, "s2": null },
+            { "p1": null, "p2": null, "s1": null, "s2": null }
+        ],
+        "sf": [
+            { "p1": null, "p2": null, "s1": null, "s2": null },
+            { "p1": null, "p2": null, "s1": null, "s2": null }
+        ],
+        "gf": { "p1": null, "p2": null, "s1": null, "s2": null }
+    }
+}

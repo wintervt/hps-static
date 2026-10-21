@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Eurostile Extended';
+    src: local('Eurostile Extended'), local('Eurostile-Extended');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+body {
+    font-family: 'Eurostile Extended', sans-serif;
+    background: #0a0d1f;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* HPS Logo Style - Bold White with Purple Outline */
+.hps-logo {
+    font-family: 'Eurostile Extended', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3rem;
+    color: white;
+    text-shadow:
+        0 0 20px rgba(139, 92, 246, 0.6),
+        3px 3px 0px rgba(109, 40, 217, 0.8),
+        -2px -2px 0px rgba(139, 92, 246, 0.3);
+    letter-spacing: -2px;
+}
+
+.hero-title {
+    font-family: 'Eurostile Extended', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.01em;
+    line-height: 0.88;
+    text-shadow:
+        0 3px 0 rgba(76, 29, 149, 0.55),
+        0 18px 36px rgba(0, 0, 0, 0.55);
+}
+
+.hps-subtitle {
+    font-family: 'Eurostile Extended', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.7rem;
+    color: #e0e0e0;
+}
+
+/* Space Background with Darker Purple Tones */
+.space-bg {
+    background: #0a0d1f linear-gradient(135deg, rgba(17, 24, 39, 0.98) 0%, rgba(76, 29, 149, 0.4) 50%, rgba(17, 24, 39, 0.98) 100%) fixed;
+}
+
+/* Muted Purple Gradient */
+.purple-gradient {
+    background: linear-gradient(135deg, #7c3aed 0%, #9333ea 100%);
+}
+
+.purple-gradient-text {
+    background: linear-gradient(135deg, #a78bfa 0%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Match Cards with Darker Purple */
+.match-card {
+    background: linear-gradient(135deg, rgba(109, 40, 217, 0.25) 0%, rgba(76, 29, 149, 0.2) 100%);
+    border: 2px solid rgba(139, 92, 246, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(139, 92, 246, 0.3);
+    border-color: rgba(167, 139, 250, 0.6);
+}
+
+.bracket-match {
+    background: rgba(88, 28, 135, 0.35);
+    border: 2px solid rgba(139, 92, 246, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.player-vs {
+    font-family: 'Eurostile Extended', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+/* Softer Glow Effects */
+.glow-purple {
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.4);
+}
+
+/* Italic Headers */
+.italic-header {
+    font-family: 'Eurostile Extended', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.hps-subheader {
+    @apply text-3xl md:text-4xl font-black mb-10 text-center italic-header purple-gradient-text;
+}
+
+.primary-button {
+    @apply purple-gradient px-6 md:px-10 py-3 md:py-5 rounded-lg font-bold md:text-lg uppercase tracking-wider glow-purple transition hover:scale-105;
+}
+
+.secondary-button {
+    @apply bg-transparent border border-purple-500 hover:bg-purple-600/20 px-6 md:px-10 py-3 md:py-5 rounded-lg font-bold text-lg uppercase tracking-wider transition hover:scale-105;
+}
+
+/* Nav Link Hover */
+.nav-link {
+    position: relative;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Pulse Animation for Live Badge */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(192, 132, 252, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 35px rgba(192, 132, 252, 0.8);
+    }
+}
+
+.live-badge {
+    animation: pulse-glow 2s ease-in-out infinite;
+    background: linear-gradient(135deg, #9333ea 0%, #a855f7 100%);
+}
+
+/* Mobile menu */
+#mobile-menu {
+    transition: opacity 0.15s ease;
+}
+
+/* BW Season 1 page */
+.bw-page .tab-button {
+    @apply px-4 py-2 text-xs font-bold uppercase tracking-wider text-gray-400 transition-colors md:px-6 md:py-3 md:text-sm;
+    cursor: pointer;
+}
+.bw-page .tab-button:hover {
+    color: #c4b5fd;
+}
+.bw-page .tab-active {
+    border-bottom: 2px solid #a855f7;
+    color: #a855f7;
+}
+
+.bw-page .bracket-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+@media (max-width: 768px) {
+    .bw-page .bracket-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bw-page .bracket-match {
+    @apply overflow-hidden rounded-lg border border-purple-500/20 bg-gray-800/60;
+}
+.bw-page .bracket-slot {
+    @apply flex items-center gap-2 px-3 py-2 text-sm text-gray-300 transition-colors;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+}
+.bw-page .bracket-slot:last-child {
+    border-bottom: none;
+}
+.bw-page .bracket-winner {
+    @apply bg-purple-500/15 font-bold text-white;
+}
+.bw-page .bracket-score {
+    @apply ml-auto flex-shrink-0 font-bold tabular-nums;
+}

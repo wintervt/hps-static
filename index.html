@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Hungarian Pro Series - StarCraft 2 Tournament</title>
+        <meta name="description" content="HPS — the premier Hungarian Starcraft 2 tournament series.">
+        <link rel="canonical" href="https://hungarianproseries.com/">
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Hungarian Pro Series - StarCraft 2 Tournament">
+        <meta property="og:description" content="HPS — the premier Hungarian Starcraft 2 tournament series.">
+        <meta property="og:image" content="https://hungarianproseries.com/images/hps-default.png">
+        <meta property="og:url" content="https://hungarianproseries.com/">
+        <meta property="og:site_name" content="Hungarian Pro Series">
+        <meta property="og:locale" content="hu_HU">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Hungarian Pro Series - StarCraft 2 Tournament">
+        <meta name="twitter:description" content="HPS — the premier Hungarian Starcraft 2 tournament series.">
+        <meta name="twitter:image" content="https://hungarianproseries.com/images/hps-default.png">
+
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <meta name="apple-mobile-web-app-title" content="Hungarian Pro Series">
+        <link rel="manifest" href="site.webmanifest">
+        <meta name="theme-color" content="#8b5cf6">
+        <meta name="author" content="HPS Team">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LL7SPWYYJS"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LL7SPWYYJS');
+        </script>
+    </head>
+    <body class="font-sans antialiased">
+        <main>
+            <header>
+                <nav class="fixed w-full top-0 z-50 bg-gray-900/95 backdrop-blur-md border-b-2 border-purple-600/20">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-2">
+                                <div class="py-6">
+                                    <a href="#home" aria-label="Go to home section">
+                                        <img src="images/logo.png" alt="HPS Logo" class="h-10 w-auto">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <nav class="hidden md:flex space-x-8 items-center">
+                                <a href="#home" class="nav-link text-white hover:text-purple-300 text-sm block">HOME</a>
+                                <a href="#tournaments" class="nav-link text-white hover:text-purple-300 text-sm block">TOURNAMENTS</a>
+                                <a href="#shop" class="nav-link text-white hover:text-purple-300 text-sm block">SHOP</a>
+                                <a href="bw-season-1/" class="nav-link text-white hover:text-purple-300 text-sm block">BW SEASON 1</a>
+                            </nav>
+
+                            <button id="menu-open" class="md:hidden text-white p-2" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+
+                <div id="mobile-menu" class="hidden fixed inset-0 z-[100] flex-col bg-gray-900 md:hidden">
+                    <div class="flex h-[90px] flex-shrink-0 items-center justify-end px-4 border-b-2 border-purple-600/20">
+                        <button id="menu-close" class="text-white/90 hover:text-white p-2" aria-label="Close menu">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 w-full overflow-auto">
+                        <ul class="flex flex-col items-stretch px-4 py-6 gap-2">
+                            <li><a href="#home" class="block w-full px-4 py-4 rounded-lg text-white uppercase tracking-wider font-semibold text-base hover:bg-white/5 transition">Home</a></li>
+                            <li><a href="#tournaments" class="block w-full px-4 py-4 rounded-lg text-white uppercase tracking-wider font-semibold text-base hover:bg-white/5 transition">Tournaments</a></li>
+                            <li><a href="#shop" class="block w-full px-4 py-4 rounded-lg text-white uppercase tracking-wider font-semibold text-base hover:bg-white/5 transition">Shop</a></li>
+                            <li><a href="bw-season-1/" class="block w-full px-4 py-4 rounded-lg text-white uppercase tracking-wider font-semibold text-base hover:bg-white/5 transition">BW Season 1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <article class="pt-20">
+                <!-- Hero Section -->
+                <section id="home" class="relative isolate flex min-h-[78vh] items-end overflow-hidden md:min-h-[88vh]">
+                    <picture class="absolute inset-0 -z-20 block">
+                        <source srcset="images/backgrounds/hps-6-bg-1920.png" media="(min-width: 1280px)">
+                        <source srcset="images/backgrounds/hps-6-bg-1280.png" media="(min-width: 768px)">
+                        <source srcset="images/backgrounds/hps-6-bg-768.png" media="(min-width: 640px)">
+                        <img
+                            src="images/backgrounds/hps-6-bg-480.png"
+                            alt=""
+                            aria-hidden="true"
+                            class="h-full w-full object-cover object-[center_42%]"
+                            loading="eager"
+                            decoding="async"
+                        >
+                    </picture>
+
+                    <div class="absolute inset-0 -z-10 bg-gradient-to-t from-[#0a0d1f] via-[#0a0d1f]/55 to-[#0a0d1f]/20" aria-hidden="true"></div>
+                    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-[#0a0d1f]/90 via-[#0a0d1f]/45 to-transparent" aria-hidden="true"></div>
+
+                    <div class="pointer-events-none absolute inset-4 md:inset-6" aria-hidden="true">
+                        <span class="absolute left-0 top-0 h-8 w-8 border-l border-t border-purple-300/40"></span>
+                        <span class="absolute right-0 top-0 h-8 w-8 border-r border-t border-purple-300/40"></span>
+                        <span class="absolute bottom-3 left-0 h-8 w-8 border-b border-l border-purple-300/40"></span>
+                        <span class="absolute bottom-3 right-0 h-8 w-8 border-b border-r border-purple-300/40"></span>
+                    </div>
+
+                    <div class="relative z-10 mx-auto w-full max-w-7xl px-6 pb-16 pt-16 md:px-10 md:pb-24">
+                        <div class="max-w-2xl">
+                            <p class="mb-5 flex items-center gap-4 text-[11px] font-bold uppercase tracking-[0.42em] text-purple-200">
+                                <span class="h-px w-10 bg-purple-400" aria-hidden="true"></span>
+                                StarCraft II
+                            </p>
+                            <h1 class="hero-title text-5xl text-white sm:text-6xl md:text-7xl lg:text-8xl">
+                                Hungarian<br>Pro Series
+                            </h1>
+                            <p class="mt-6 max-w-lg text-base font-light leading-relaxed text-gray-200 md:text-xl">
+                                Hungary's premier StarCraft 2 tournament series. Watch the nation's best players battle for supremacy.
+                            </p>
+                            <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+                                <a href="https://www.twitch.tv/winter_hu" target="_blank" rel="noopener noreferrer" class="primary-button text-center">
+                                    Watch on Twitch
+                                </a>
+                                <a href="#tournaments" class="secondary-button text-center"> View Results </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Past Tournaments -->
+                <section id="tournaments" class="py-20 px-4 bg-gray-900/30">
+                    <div class="max-w-7xl mx-auto">
+                        <h2 class="text-3xl md:text-5xl font-black text-center mb-16 italic-header purple-gradient-text">
+                            PAST SEASONS
+                        </h2>
+
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="match-card p-8 card-hover">
+                                <div class="text-center mb-6">
+                                    <h3 class="text-3xl font-black mb-2 italic-header">Hungarian Pro Series #7</h3>
+                                    <p class="text-purple-300 text-sm uppercase tracking-wider">Individual • 2026</p>
+                                </div>
+                                <div class="bg-purple-900/30 rounded-lg p-4 mb-4">
+                                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Champion</p>
+                                    <p class="text-2xl font-bold italic-header purple-gradient-text">Nihed</p>
+                                </div>
+                                <div class="text-purple-300 text-sm text-center uppercase tracking-wide">160 USD</div>
+                            </div>
+
+                            <div class="match-card p-8 card-hover">
+                                <div class="text-center mb-6">
+                                    <h3 class="text-3xl font-black mb-2 italic-header">Hungarian Pro Series #6</h3>
+                                    <p class="text-purple-300 text-sm uppercase tracking-wider">Individual • 2025</p>
+                                </div>
+                                <div class="bg-purple-900/30 rounded-lg p-4 mb-4">
+                                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Champion</p>
+                                    <p class="text-2xl font-bold italic-header purple-gradient-text">Nihed</p>
+                                </div>
+                                <div class="text-purple-300 text-sm text-center uppercase tracking-wide">220 USD</div>
+                            </div>
+
+                            <div class="match-card p-8 card-hover">
+                                <div class="text-center mb-6">
+                                    <h3 class="text-3xl font-black mb-2 italic-header">Hungarian Pro Series #5</h3>
+                                    <p class="text-purple-300 text-sm uppercase tracking-wider">Individual • 2024</p>
+                                </div>
+                                <div class="bg-purple-900/30 rounded-lg p-4 mb-4">
+                                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Champion</p>
+                                    <p class="text-2xl font-bold italic-header purple-gradient-text">Psz</p>
+                                </div>
+                                <div class="text-purple-300 text-sm text-center uppercase tracking-wide">140 USD</div>
+                            </div>
+
+                            <div class="match-card p-8 card-hover">
+                                <div class="text-center mb-6">
+                                    <h3 class="text-3xl font-black mb-2 italic-header">Hungarian Pro Series #4</h3>
+                                    <p class="text-purple-300 text-sm uppercase tracking-wider">Individual • 2024</p>
+                                </div>
+                                <div class="bg-purple-900/30 rounded-lg p-4 mb-4">
+                                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Champion</p>
+                                    <p class="text-2xl font-bold italic-header purple-gradient-text">Nihed</p>
+                                </div>
+                                <div class="text-purple-300 text-sm text-center uppercase tracking-wide">340 USD</div>
+                            </div>
+
+                            <div class="match-card p-8 card-hover">
+                                <div class="text-center mb-6">
+                                    <h3 class="text-3xl font-black mb-2 italic-header">Hungarian Pro Series: Team League</h3>
+                                    <p class="text-purple-300 text-sm uppercase tracking-wider">Team • 2024</p>
+                                </div>
+                                <div class="bg-purple-900/30 rounded-lg p-4 mb-4">
+                                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Champion</p>
+                                    <p class="text-2xl font-bold italic-header purple-gradient-text">Team Firebat</p>
+                                </div>
+                                <div class="text-purple-300 text-sm text-center uppercase tracking-wide">320 USD</div>
+                            </div>
+
+                            <div class="match-card p-8 card-hover">
+                                <div class="text-center mb-6">
+                                    <h3 class="text-3xl font-black mb-2 italic-header">Hungarian Pro Series #3</h3>
+                                    <p class="text-purple-300 text-sm uppercase tracking-wider">Individual • 2024</p>
+                                </div>
+                                <div class="bg-purple-900/30 rounded-lg p-4 mb-4">
+                                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Champion</p>
+                                    <p class="text-2xl font-bold italic-header purple-gradient-text">Freeman</p>
+                                </div>
+                                <div class="text-purple-300 text-sm text-center uppercase tracking-wide">243 USD</div>
+                            </div>
+
+                            <div class="match-card p-8 card-hover">
+                                <div class="text-center mb-6">
+                                    <h3 class="text-3xl font-black mb-2 italic-header">Hungarian Pro Series #2</h3>
+                                    <p class="text-purple-300 text-sm uppercase tracking-wider">Individual • 2023</p>
+                                </div>
+                                <div class="bg-purple-900/30 rounded-lg p-4 mb-4">
+                                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Champion</p>
+                                    <p class="text-2xl font-bold italic-header purple-gradient-text">mOsTeN</p>
+                                </div>
+                                <div class="text-purple-300 text-sm text-center uppercase tracking-wide">100 USD</div>
+                            </div>
+
+                            <div class="match-card p-8 card-hover">
+                                <div class="text-center mb-6">
+                                    <h3 class="text-3xl font-black mb-2 italic-header">Hungarian Pro Series #1</h3>
+                                    <p class="text-purple-300 text-sm uppercase tracking-wider">Individual • 2022</p>
+                                </div>
+                                <div class="bg-purple-900/30 rounded-lg p-4 mb-4">
+                                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Champion</p>
+                                    <p class="text-2xl font-bold italic-header purple-gradient-text">Nihed</p>
+                                </div>
+                                <div class="text-purple-300 text-sm text-center uppercase tracking-wide">50 USD</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Featured Players -->
+                <section id="players" class="px-4 py-20">
+                    <div class="mx-auto max-w-7xl">
+                        <h2 class="italic-header purple-gradient-text mb-16 text-center text-3xl font-black md:text-5xl">TOP COMPETITORS</h2>
+
+                        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+                            <div class="match-card card-hover p-6 text-center">
+                                <div class="purple-gradient glow-purple mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full text-4xl">
+                                    <img src="images/protoss-white.png" alt="Protoss" class="h-12 w-12 object-contain">
+                                </div>
+                                <h3 class="italic-header mb-2 text-2xl font-black uppercase">Nihed</h3>
+                                <p class="mb-4 text-xs uppercase tracking-widest text-purple-300">Protoss</p>
+                                <div class="rounded-lg bg-purple-900/30 p-3">
+                                    <p class="text-xs uppercase tracking-wider text-gray-400">Tournament Wins</p>
+                                    <p class="italic-header purple-gradient-text text-3xl font-black">4</p>
+                                </div>
+                            </div>
+
+                            <div class="match-card card-hover p-6 text-center">
+                                <div class="purple-gradient glow-purple mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full text-4xl">
+                                    <img src="images/terran-white.png" alt="Terran" class="h-12 w-12 object-contain">
+                                </div>
+                                <h3 class="italic-header mb-2 text-2xl font-black uppercase">Psz</h3>
+                                <p class="mb-4 text-xs uppercase tracking-widest text-purple-300">Terran</p>
+                                <div class="rounded-lg bg-purple-900/30 p-3">
+                                    <p class="text-xs uppercase tracking-wider text-gray-400">Tournament Wins</p>
+                                    <p class="italic-header purple-gradient-text text-3xl font-black">1</p>
+                                </div>
+                            </div>
+
+                            <div class="match-card card-hover p-6 text-center">
+                                <div class="purple-gradient glow-purple mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full text-4xl">
+                                    <img src="images/zerg-white.png" alt="Zerg" class="h-12 w-12 object-contain">
+                                </div>
+                                <h3 class="italic-header mb-2 text-2xl font-black uppercase">Freeman</h3>
+                                <p class="mb-4 text-xs uppercase tracking-widest text-purple-300">Zerg</p>
+                                <div class="rounded-lg bg-purple-900/30 p-3">
+                                    <p class="text-xs uppercase tracking-wider text-gray-400">Tournament Wins</p>
+                                    <p class="italic-header purple-gradient-text text-3xl font-black">1</p>
+                                </div>
+                            </div>
+
+                            <div class="match-card card-hover p-6 text-center">
+                                <div class="purple-gradient glow-purple mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full text-4xl">
+                                    <img src="images/protoss-white.png" alt="Protoss" class="h-12 w-12 object-contain">
+                                </div>
+                                <h3 class="italic-header mb-2 text-2xl font-black uppercase">mOsTeN</h3>
+                                <p class="mb-4 text-xs uppercase tracking-widest text-purple-300">Protoss</p>
+                                <div class="rounded-lg bg-purple-900/30 p-3">
+                                    <p class="text-xs uppercase tracking-wider text-gray-400">Tournament Wins</p>
+                                    <p class="italic-header purple-gradient-text text-3xl font-black">1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Shop Section -->
+                <section id="shop" class="py-20 px-4 bg-gray-900/30">
+                    <div class="max-w-5xl mx-auto">
+                        <h2 class="text-3xl md:text-5xl font-black text-center mb-4 italic-header purple-gradient-text">
+                            OFFICIAL MERCH
+                        </h2>
+                        <p class="text-center text-gray-400 mb-12 text-base uppercase tracking-wider">
+                            Represent HPS • Support the Tournament
+                        </p>
+
+                        <div class="match-card p-12 text-center">
+                            <div class="mb-8">
+                                <svg class="w-24 h-24 mx-auto text-purple-400 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                                </svg>
+                                <h3 class="text-2xl md:text-3xl font-black mb-3 italic-header uppercase">VISIT THE STORE</h3>
+                                <p class="text-gray-400 text-base mb-8 uppercase tracking-wide">
+                                    Exclusive HPS jerseys, tees, and gear
+                                </p>
+                            </div>
+                            <a href="https://www.letmicro.com/galleryproductdetail/1488393/7126980/azx" target="_blank" rel="noopener noreferrer"
+                               class="inline-block purple-gradient px-12 py-5 rounded-lg font-bold text-lg uppercase tracking-wider glow-purple transition hover:scale-105">
+                                SHOP NOW →
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Footer -->
+            <footer class="bg-gray-950 border-t-2 border-purple-600/20 py-12 px-4">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid md:grid-cols-3 gap-12 mb-8">
+                        <div class="py-3">
+                            <img src="images/logo.png" alt="HPS Logo" class="h-8 w-auto">
+                            <p class="text-gray-400 text-sm">Hungary's premier StarCraft 2 tournament series.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-base mb-4 purple-gradient-text uppercase tracking-wider">WATCH</h4>
+                            <ul class="space-y-3 text-gray-400 text-sm">
+                                <li><a href="https://www.youtube.com/@hungarianproseries" target="_blank" class="hover:text-purple-300 transition uppercase tracking-wide">YouTube</a></li>
+                                <li><a href="https://www.twitch.tv/winter_hu" target="_blank" class="hover:text-purple-300 transition uppercase tracking-wide">Twitch</a></li>
+                                <li><a href="https://liquipedia.net/starcraft2/Hungarian_Pro_Series" target="_blank" class="hover:text-purple-300 transition uppercase tracking-wide">Liquipedia</a></li>
+                            </ul>
+                        </div>
+
+                        <div id="contact">
+                            <h4 class="font-bold text-base mb-4 purple-gradient-text uppercase tracking-wider">CONTACT</h4>
+                            <p class="text-gray-400 text-xs mb-3 uppercase tracking-wide">For inquiries:</p>
+                            <a href="mailto:hungarianproseries@gmail.com" class="text-purple-400 hover:text-purple-300 transition font-semibold text-sm">
+                                hungarianproseries@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                        <p>&copy; <span id="year"></span> Hungarian Pro Series. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
