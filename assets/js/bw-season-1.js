@@ -160,13 +160,6 @@
     }
 
     // ─── Fixtures ────────────────────────────────────────────
-    function matchWinnerClass(match, playerName) {
-        if (match.s1 == null || match.s2 == null) return 'text-gray-200';
-        var isP1 = playerName === match.p1;
-        var won = isP1 ? match.s1 > match.s2 : match.s2 > match.s1;
-        return won ? 'text-green-400' : 'text-gray-500';
-    }
-
     function renderFixtures(data, playerRace) {
         var html = '';
         for (var round = 1; round <= 6; round++) {
@@ -185,11 +178,11 @@
                         '<div class="match-card flex items-center justify-between p-3 md:p-4">' +
                             '<div class="flex min-w-0 flex-1 items-center gap-2">' +
                                 '<img src="' + raceIcon(playerRace(match.p1)) + '" class="h-5 w-5 flex-shrink-0 object-contain" alt="">' +
-                                '<span class="italic-header truncate text-sm md:text-base ' + matchWinnerClass(match, match.p1) + '">' + esc(match.p1) + '</span>' +
+                                '<span class="italic-header truncate text-sm md:text-base text-gray-200">' + esc(match.p1) + '</span>' +
                             '</div>' +
                             '<div class="mx-2 flex-shrink-0 text-center md:mx-6">' + score + '</div>' +
                             '<div class="flex min-w-0 flex-1 items-center justify-end gap-2">' +
-                                '<span class="italic-header truncate text-sm md:text-base ' + matchWinnerClass(match, match.p2) + '">' + esc(match.p2) + '</span>' +
+                                '<span class="italic-header truncate text-sm md:text-base text-gray-200">' + esc(match.p2) + '</span>' +
                                 '<img src="' + raceIcon(playerRace(match.p2)) + '" class="h-5 w-5 flex-shrink-0 object-contain" alt="">' +
                             '</div>' +
                         '</div>';
