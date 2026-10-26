@@ -1,5 +1,5 @@
 {
-    "revealedRounds": 2,
+    "revealedRounds": 3,
     "players": [
         { "name": "Advil", "race": "T", "tier": "Top" },
         { "name": "non", "race": "T", "tier": "Top" },
@@ -30,12 +30,12 @@
     },
     "fixtures": {
         "1": [
-            { "p1": "Advil", "p2": "Marine", "s1": null, "s2": null },
+            { "p1": "Advil", "p2": "Marine", "s1": 2, "s2": 0 },
             { "p1": "non", "p2": "Skzlime", "s1": null, "s2": null },
             { "p1": "Ace", "p2": "Itzak_Rosenberg", "s1": null, "s2": null },
             { "p1": "EaGLe", "p2": "Capybara", "s1": null, "s2": null },
             { "p1": "vOrti", "p2": "Lynkoln", "s1": null, "s2": null },
-            { "p1": "Fazek", "p2": "WiNtER", "s1": null, "s2": null },
+            { "p1": "Fazek", "p2": "WiNtER", "s1": 2, "s2": 0 },
             { "p1": "Psz", "p2": "Milkaa", "s1": null, "s2": null },
             { "p1": "Spezza", "p2": "OwL!", "s1": null, "s2": null },
             { "p1": "JuGGer", "p2": "JustRoids", "s1": null, "s2": null }
