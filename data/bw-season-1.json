@@ -31,14 +31,14 @@
     "fixtures": {
         "1": [
             { "p1": "Advil", "p2": "Marine", "s1": 2, "s2": 0 },
-            { "p1": "non", "p2": "Skzlime", "s1": null, "s2": null },
-            { "p1": "Ace", "p2": "Itzak_Rosenberg", "s1": null, "s2": null },
+            { "p1": "non", "p2": "Skzlime", "s1": 0, "s2": 2 },
+            { "p1": "Ace", "p2": "Itzak_Rosenberg", "s1": 2, "s2": 0 },
             { "p1": "EaGLe", "p2": "Capybara", "s1": null, "s2": null },
-            { "p1": "vOrti", "p2": "Lynkoln", "s1": null, "s2": null },
+            { "p1": "vOrti", "p2": "Lynkoln", "s1": 2, "s2": 1 },
             { "p1": "Fazek", "p2": "WiNtER", "s1": 2, "s2": 0 },
             { "p1": "Psz", "p2": "Milkaa", "s1": null, "s2": null },
-            { "p1": "Spezza", "p2": "OwL!", "s1": null, "s2": null },
-            { "p1": "JuGGer", "p2": "JustRoids", "s1": null, "s2": null }
+            { "p1": "Spezza", "p2": "OwL!", "s1": 1, "s2": 2 },
+            { "p1": "JuGGer", "p2": "JustRoids", "s1": 2, "s2": 0 }
         ],
         "2": [
             { "p1": "Advil", "p2": "Fazek", "s1": null, "s2": null },
