@@ -1,5 +1,5 @@
 {
-    "revealedRounds": 3,
+    "revealedRounds": 4,
     "players": [
         { "name": "Advil", "race": "T", "tier": "Top" },
         { "name": "non", "race": "T", "tier": "Top" },
@@ -63,12 +63,12 @@
             { "p1": "Skzlime", "p2": "Lynkoln", "s1": null, "s2": null }
         ],
         "4": [
-            { "p1": "Advil", "p2": "Capybara", "s1": null, "s2": null },
+            { "p1": "Advil", "p2": "WiNtER", "s1": null, "s2": null },
             { "p1": "non", "p2": "Marine", "s1": null, "s2": null },
             { "p1": "Ace", "p2": "Lynkoln", "s1": null, "s2": null },
             { "p1": "EaGLe", "p2": "Skzlime", "s1": null, "s2": null },
             { "p1": "vOrti", "p2": "Itzak_Rosenberg", "s1": null, "s2": null },
-            { "p1": "Fazek", "p2": "WiNtER", "s1": null, "s2": null },
+            { "p1": "Fazek", "p2": "Capybara", "s1": null, "s2": null },
             { "p1": "Psz", "p2": "JustRoids", "s1": null, "s2": null },
             { "p1": "Spezza", "p2": "Milkaa", "s1": null, "s2": null },
             { "p1": "JuGGer", "p2": "OwL!", "s1": null, "s2": null }
