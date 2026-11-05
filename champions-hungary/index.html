@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>HPS Champions Hungary</title>
+        <meta name="description" content="HPS Champions Hungary &mdash; 2 teams, 14 players, 3 weeks of StarCraft 2 action">
+        <link rel="canonical" href="https://hungarianproseries.com/champions-hungary/">
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="HPS Champions Hungary">
+        <meta property="og:description" content="HPS Champions Hungary &mdash; 2 teams, 14 players, 3 weeks of StarCraft 2 action">
+        <meta property="og:image" content="https://hungarianproseries.com/images/hps-default.png">
+        <meta property="og:url" content="https://hungarianproseries.com/champions-hungary/">
+        <meta property="og:site_name" content="Hungarian Pro Series">
+        <meta property="og:locale" content="hu_HU">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="HPS Champions Hungary">
+        <meta name="twitter:description" content="HPS Champions Hungary &mdash; 2 teams, 14 players, 3 weeks of StarCraft 2 action">
+        <meta name="twitter:image" content="https://hungarianproseries.com/images/hps-default.png">
+
+        <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+        <meta name="apple-mobile-web-app-title" content="Hungarian Pro Series">
+        <link rel="manifest" href="../site.webmanifest">
+        <meta name="theme-color" content="#8b5cf6">
+        <meta name="author" content="HPS Team">
+
+        <link rel="stylesheet" href="../assets/css/styles.css">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LL7SPWYYJS"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LL7SPWYYJS');
+        </script>
+    </head>
+    <body class="font-sans antialiased">
+        <main>
+            <header>
+                <nav class="fixed w-full top-0 z-50 bg-gray-900/95 backdrop-blur-md border-b-2 border-purple-600/20">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-2">
+                                <div class="py-6">
+                                    <a href="../" aria-label="Go to home section">
+                                        <img src="../images/logo.png" alt="HPS Logo" class="h-10 w-auto">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <nav class="hidden md:flex space-x-8 items-center">
+                                <a href="../" class="nav-link text-white hover:text-purple-300 text-sm block">HOME</a>
+                                <a href="../#tournaments" class="nav-link text-white hover:text-purple-300 text-sm block">TOURNAMENTS</a>
+                                <a href="../#shop" class="nav-link text-white hover:text-purple-300 text-sm block">SHOP</a>
+                                <a href="../bw-season-1/" class="nav-link text-white hover:text-purple-300 text-sm block">BW SEASON 1</a>
+                                <a href="./" class="nav-link text-white hover:text-purple-300 text-sm block">HPS CH</a>
+                            </nav>
+
+                            <button id="menu-open" class="md:hidden text-white p-2" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+
+                <div id="mobile-menu" class="hidden fixed inset-0 z-[100] flex-col bg-gray-900 md:hidden">
+                    <div class="flex h-[90px] flex-shrink-0 items-center justify-end px-4 border-b-2 border-purple-600/20">
+                        <button id="menu-close" class="text-white/90 hover:text-white p-2" aria-label="Close menu">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 w-full overflow-auto">
+                        <ul class="flex flex-col items-stretch px-4 py-6 gap-2">
+                            <li><a href="../" class="block w-full px-4 py-4 rounded-lg text-white uppercase tracking-wider font-semibold text-base hover:bg-white/5 transition">Home</a></li>
+                            <li><a href="../#tournaments" class="block w-full px-4 py-4 rounded-lg text-white uppercase tracking-wider font-semibold text-base hover:bg-white/5 transition">Tournaments</a></li>
+                            <li><a href="../#shop" class="block w-full px-4 py-4 rounded-lg text-white uppercase tracking-wider font-semibold text-base hover:bg-white/5 transition">Shop</a></li>
+                            <li><a href="../bw-season-1/" class="block w-full px-4 py-4 rounded-lg text-white uppercase tracking-wider font-semibold text-base hover:bg-white/5 transition">BW Season 1</a></li>
+                            <li><a href="./" class="block w-full px-4 py-4 rounded-lg text-white uppercase tracking-wider font-semibold text-base hover:bg-white/5 transition">HPS CH</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <article class="pt-20">
+                <div class="ch-page space-bg min-h-screen text-gray-100">
+                    <!-- Header -->
+                    <section class="relative overflow-hidden px-4 pb-12 pt-32">
+                        <picture class="absolute inset-0 block">
+                            <source srcset="../images/backgrounds/hps-6-bg-1920.png" media="(min-width: 1280px)">
+                            <source srcset="../images/backgrounds/hps-6-bg-1280.png" media="(min-width: 768px)">
+                            <source srcset="../images/backgrounds/hps-6-bg-768.png" media="(min-width: 640px)">
+                            <img
+                                src="../images/backgrounds/hps-6-bg-480.png"
+                                alt="StarCraft 2"
+                                class="h-full w-full object-cover"
+                                loading="eager"
+                            >
+                        </picture>
+                        <div class="absolute inset-0 z-0 bg-gray-900/70"></div>
+                        <div class="relative z-10 mx-auto max-w-7xl text-center">
+                            <h1 class="italic-header mb-2 text-4xl md:text-6xl">HPS CHAMPIONS HUNGARY</h1>
+                            <p class="text-lg text-gray-400">2 Teams &middot; 14 Players &middot; 3 Weeks &middot; StarCraft 2 Mini Event</p>
+                        </div>
+                    </section>
+
+                    <!-- Tab Navigation -->
+                    <section class="border-b-2 border-purple-600/20 bg-gray-900/30 px-4 py-4">
+                        <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-2 md:gap-8">
+                            <button class="tab-button" data-tab="teams">TEAMS</button>
+                            <button class="tab-button" data-tab="draft">DRAFT</button>
+                            <button class="tab-button" data-tab="week1">WEEK 1</button>
+                            <button class="tab-button" data-tab="week2">WEEK 2</button>
+                            <button class="tab-button" data-tab="week3">WEEK 3</button>
+                            <button class="tab-button" data-tab="rulebook">RULEBOOK</button>
+                        </div>
+                    </section>
+
+                    <!-- TEAMS TAB -->
+                    <section data-panel="teams" class="px-4 py-12">
+                        <div class="mx-auto max-w-5xl">
+                            <!-- Standings Bar -->
+                            <div class="match-card p-4 md:p-6 mb-8">
+                                <h2 class="italic-header purple-gradient-text text-center text-2xl mb-4">OVERALL STANDINGS</h2>
+                                <div class="flex items-center justify-center gap-6 md:gap-12">
+                                    <div class="text-center">
+                                        <p class="italic-header text-lg text-purple-300" id="team-a-name">Team Freeman</p>
+                                        <p class="italic-header text-4xl md:text-5xl" id="team-a-pts">0</p>
+                                        <p class="text-xs text-gray-500 uppercase tracking-wider">Points</p>
+                                    </div>
+                                    <div class="italic-header text-2xl text-purple-400">vs</div>
+                                    <div class="text-center">
+                                        <p class="italic-header text-lg text-purple-300" id="team-b-name">Team Psz</p>
+                                        <p class="italic-header text-4xl md:text-5xl" id="team-b-pts">0</p>
+                                        <p class="text-xs text-gray-500 uppercase tracking-wider">Points</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Team Rosters -->
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="match-card p-4 md:p-6">
+                                    <h3 class="italic-header mb-4 text-lg text-purple-300 text-center">TEAM FREEMAN</h3>
+                                    <div id="roster-a" class="space-y-2"></div>
+                                </div>
+                                <div class="match-card p-4 md:p-6">
+                                    <h3 class="italic-header mb-4 text-lg text-purple-300 text-center">TEAM PSZ</h3>
+                                    <div id="roster-b" class="space-y-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- DRAFT TAB -->
+                    <section data-panel="draft" class="px-4 py-12">
+                        <div class="mx-auto max-w-4xl">
+                            <h2 class="italic-header purple-gradient-text mb-2 text-center text-2xl">PLAYER DRAFT</h2>
+                            <p class="mb-8 text-center text-sm text-gray-400">Snake Draft &mdash; Freeman picks first, then Psz. Order reverses every two picks.</p>
+
+                            <!-- Draft Order -->
+                            <div class="match-card p-4 md:p-6 mb-8">
+                                <h3 class="italic-header mb-4 text-base text-purple-300">DRAFT ORDER</h3>
+                                <div id="draft-picks" class="space-y-2"></div>
+                            </div>
+
+                            <!-- Available Players -->
+                            <div class="match-card p-4 md:p-6">
+                                <h3 class="italic-header mb-4 text-base text-purple-300">AVAILABLE PLAYER POOL</h3>
+                                <div id="player-pool" class="grid grid-cols-2 md:grid-cols-3 gap-2"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- WEEK 1 TAB -->
+                    <section data-panel="week1" class="px-4 py-12">
+                        <div class="mx-auto max-w-4xl">
+                            <h2 class="italic-header purple-gradient-text mb-1 text-center text-2xl">WEEK 1 &ndash; FIRST TEAM BATTLE</h2>
+                            <p class="mb-8 text-center text-xs text-gray-500">7 individual matches &middot; BO3 &middot; Every player plays one match</p>
+                            <div id="week1-matches" class="space-y-2"></div>
+                            <div class="match-card mt-6 p-4 text-center">
+                                <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Week 1 Score</p>
+                                <div class="flex items-center justify-center gap-4">
+                                    <span class="italic-header text-lg text-purple-300" id="w1-team-a">Team Freeman</span>
+                                    <span class="italic-header text-2xl" id="w1-score-a">0</span>
+                                    <span class="text-purple-400">-</span>
+                                    <span class="italic-header text-2xl" id="w1-score-b">0</span>
+                                    <span class="italic-header text-lg text-purple-300" id="w1-team-b">Team Psz</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- WEEK 2 TAB -->
+                    <section data-panel="week2" class="px-4 py-12">
+                        <div class="mx-auto max-w-4xl">
+                            <h2 class="italic-header purple-gradient-text mb-1 text-center text-2xl">WEEK 2 &ndash; SECOND TEAM BATTLE</h2>
+                            <p class="mb-8 text-center text-xs text-gray-500">7 individual matches &middot; BO3 &middot; Every player plays one match</p>
+                            <div id="week2-matches" class="space-y-2"></div>
+                            <div class="match-card mt-6 p-4 text-center">
+                                <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Week 2 Score</p>
+                                <div class="flex items-center justify-center gap-4">
+                                    <span class="italic-header text-lg text-purple-300" id="w2-team-a">Team Freeman</span>
+                                    <span class="italic-header text-2xl" id="w2-score-a">0</span>
+                                    <span class="text-purple-400">-</span>
+                                    <span class="italic-header text-2xl" id="w2-score-b">0</span>
+                                    <span class="italic-header text-lg text-purple-300" id="w2-team-b">Team Psz</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- WEEK 3 TAB -->
+                    <section data-panel="week3" class="px-4 py-12">
+                        <div class="mx-auto max-w-4xl">
+                            <h2 class="italic-header purple-gradient-text mb-1 text-center text-2xl">WEEK 3 &ndash; ALL-KILL CHAMPIONSHIP</h2>
+                            <p class="mb-8 text-center text-xs text-gray-500">BO7 All-Kill &middot; 4 players per team &middot; Loser eliminated, winner stays</p>
+
+                            <!-- Lineups -->
+                            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                                <div class="match-card p-4 md:p-6">
+                                    <h3 class="italic-header mb-3 text-base text-purple-300 text-center">TEAM FREEMAN LINEUP</h3>
+                                    <div id="allkill-lineup-a" class="space-y-2"></div>
+                                </div>
+                                <div class="match-card p-4 md:p-6">
+                                    <h3 class="italic-header mb-3 text-base text-purple-300 text-center">TEAM PSZ LINEUP</h3>
+                                    <div id="allkill-lineup-b" class="space-y-2"></div>
+                                </div>
+                            </div>
+
+                            <!-- All-Kill Games -->
+                            <div class="match-card p-4 md:p-6 mb-6">
+                                <h3 class="italic-header mb-4 text-base text-purple-300">ALL-KILL GAMES</h3>
+                                <div id="allkill-games" class="space-y-2"></div>
+                            </div>
+
+                            <!-- All-Kill Score -->
+                            <div class="match-card p-4 text-center">
+                                <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">All-Kill Score (incl. +5 winner bonus)</p>
+                                <div class="flex items-center justify-center gap-4">
+                                    <span class="italic-header text-lg text-purple-300" id="ak-team-a">Team Freeman</span>
+                                    <span class="italic-header text-2xl" id="ak-score-a">0</span>
+                                    <span class="text-purple-400">-</span>
+                                    <span class="italic-header text-2xl" id="ak-score-b">0</span>
+                                    <span class="italic-header text-lg text-purple-300" id="ak-team-b">Team Psz</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- RULEBOOK TAB -->
+                    <section data-panel="rulebook" class="px-4 py-12">
+                        <div class="mx-auto max-w-3xl space-y-8">
+                            <h2 class="italic-header purple-gradient-text text-center text-3xl">HPS Champions Hungary</h2>
+                            <p class="text-center text-sm text-gray-400">Versenyszab&aacute;lyzat (Rulebook)</p>
+
+                            <!-- Overview -->
+                            <div class="match-card p-5 md:p-8">
+                                <h3 class="italic-header mb-4 text-lg text-purple-300">Form&aacute;tum &Aacute;ttekint&eacute;s</h3>
+                                <p class="text-sm text-gray-300 mb-3">A verseny k&eacute;t csapatot &aacute;ll&iacute;t szembe egym&aacute;ssal, csapatonk&eacute;nt 7 j&aacute;t&eacute;kossal. H&aacute;rom h&eacute;ten &aacute;t egyéni BO3 meccsekben &eacute;s egy csapat All-Kill BO7-ben m&eacute;rik &ouml;ssze tud&aacute;sukat.</p>
+                                <ul class="space-y-2 text-sm text-gray-300">
+                                    <li><span class="text-purple-400 font-bold">Csapatok:</span> 2 csapat, 7 j&aacute;t&eacute;kos csapatonk&eacute;nt</li>
+                                    <li><span class="text-purple-400 font-bold">Kapit&aacute;nyok:</span> Freeman (Team A) &amp; Psz (Team B)</li>
+                                    <li><span class="text-purple-400 font-bold">J&aacute;t&eacute;kos pool:</span> 14 j&aacute;t&eacute;kos, snake draft form&aacute;tumban</li>
+                                    <li><span class="text-purple-400 font-bold">Id&#337;tartam:</span> 3 h&eacute;t garant&aacute;lt, maximum 4 h&eacute;t</li>
+                                </ul>
+                            </div>
+
+                            <!-- 1. Captains & Draft -->
+                            <div class="match-card p-5 md:p-8">
+                                <h3 class="italic-header mb-4 text-lg text-purple-300">1. Kapit&aacute;nyok &eacute;s Draft</h3>
+                                <ul class="space-y-2 text-sm text-gray-300">
+                                    <li><span class="text-purple-400 font-bold">Snake draft</span> form&aacute;tum &mdash; Freeman kapja az els&#337; picket.</li>
+                                    <li><span class="text-purple-400 font-bold">Psz</span> kapja a m&aacute;sodik picket.</li>
+                                    <li>A sorrend minden k&eacute;t egym&aacute;st k&ouml;vet&#337; pick ut&aacute;n <span class="font-bold text-white">megfordul</span>.</li>
+                                    <li>A kapit&aacute;nyok automatikusan a saj&aacute;t csapatukba ker&uuml;lnek.</li>
+                                </ul>
+                                <div class="rounded-lg border border-purple-500/20 bg-purple-500/5 p-3 mt-4 text-xs text-gray-400">
+                                    Draft sorrend: Freeman, Psz, Psz, Freeman, Freeman, Psz, Psz, Freeman, Freeman, Psz, Psz, Freeman
+                                </div>
+                            </div>
+
+                            <!-- 2. Week 1 & 2 -->
+                            <div class="match-card p-5 md:p-8">
+                                <h3 class="italic-header mb-4 text-lg text-purple-300">2. Week 1 &amp; 2 &ndash; Team Battle</h3>
+                                <ul class="space-y-2 text-sm text-gray-300">
+                                    <li><span class="text-purple-400 font-bold">Form&aacute;tum:</span> 7 egyéni meccs, mindegyik <span class="font-bold text-white">BO3</span></li>
+                                    <li>Minden j&aacute;t&eacute;kos pontosan egy meccset j&aacute;tszik hetente.</li>
+                                    <li>A kapit&aacute;nyok d&ouml;ntik el a p&aacute;ros&iacute;t&aacute;sokat.</li>
+                                    <li><span class="text-purple-400 font-bold">Pontsz&aacute;m&iacute;t&aacute;s:</span> Minden meccs gy&#337;zelem = <span class="font-bold text-white">1 pont</span>. Maximum 7 pont hetente.</li>
+                                </ul>
+
+                                <h4 class="mt-4 mb-2 text-sm font-bold text-gray-200">Map Selection</h4>
+                                <ul class="space-y-1 text-sm text-gray-300">
+                                    <li>1. A szervez&#337; adja a kezd&#337; mapet minden p&aacute;ros&iacute;t&aacute;shoz.</li>
+                                    <li>2. Az els&#337; map vesztes v&aacute;lasztja a m&aacute;sodik mapet.</li>
+                                    <li>3. 1-1-n&eacute;l a m&aacute;sodik map vesztes v&aacute;lasztja a harmadik mapet.</li>
+                                    <li>4. A 2. &eacute;s 3. map el&#337;tt a gy&#337;ztes vetoz&aacute;lhat egy mapet.</li>
+                                    <li>5. Ugyanaz a map nem j&aacute;tszhat&oacute; &uacute;jra egy szeri&aacute;n bel&uuml;l.</li>
+                                </ul>
+                            </div>
+
+                            <!-- 3. Week 3 All-Kill -->
+                            <div class="match-card p-5 md:p-8">
+                                <h3 class="italic-header mb-4 text-lg text-purple-300">3. Week 3 &ndash; All-Kill BO7</h3>
+                                <ul class="space-y-2 text-sm text-gray-300">
+                                    <li><span class="text-purple-400 font-bold">Form&aacute;tum:</span> 4 j&aacute;t&eacute;kos csapatonk&eacute;nt, <span class="font-bold text-white">All-Kill BO7</span></li>
+                                    <li>A kapit&aacute;nyok titokban &aacute;ll&iacute;tj&aacute;k &ouml;ssze a 4 f&#337;s felaz&aacute;st.</li>
+                                    <li>A veszt&#337; kiesik, a gy&#337;ztes marad.</li>
+                                    <li>Az els&#337; csapat, amelyik kiejti mind a 4 ellenfelet, nyer.</li>
+                                </ul>
+
+                                <h4 class="mt-4 mb-2 text-sm font-bold text-gray-200">Pontsz&aacute;m&iacute;t&aacute;s</h4>
+                                <ul class="space-y-1 text-sm text-gray-300">
+                                    <li>Minden megnyert map = <span class="font-bold text-white">1 pont</span></li>
+                                    <li>Az All-Kill szeri&aacute;t megnyert csapat = <span class="font-bold text-white">+5 b&oacute;nusz pont</span></li>
+                                </ul>
+                                <div class="rounded-lg border border-purple-500/20 bg-purple-500/5 p-3 mt-4 text-xs text-gray-400">
+                                    P&eacute;lda: Team A 4&ndash;3-ra nyer &rarr; Team A: 4+5 = 9 pont, Team B: 3 pont
+                                </div>
+                            </div>
+
+                            <!-- 4. Week 4 Ace Match -->
+                            <div class="match-card p-5 md:p-8">
+                                <h3 class="italic-header mb-4 text-lg text-purple-300">4. Week 4 &ndash; Ace Match (ha d&ouml;ntetlen)</h3>
+                                <ul class="space-y-2 text-sm text-gray-300">
+                                    <li>Csak <span class="font-bold text-white">pontegyenl&#337;s&eacute;g eset&eacute;n</span> sz&uuml;ks&eacute;ges.</li>
+                                    <li><span class="text-purple-400 font-bold">Form&aacute;tum:</span> 1v1 <span class="font-bold text-white">BO5</span></li>
+                                    <li>Mindkét kapit&aacute;ny v&aacute;lasztja a k&eacute;pvisel&#337;j&eacute;t (ak&aacute;r saj&aacute;t mag&aacute;t is).</li>
+                                    <li>A gy&#337;ztes megszerzit a bajnoki c&iacute;met a csapat&aacute;nak.</li>
+                                </ul>
+                            </div>
+
+                            <!-- 5. Scoring Summary -->
+                            <div class="match-card p-5 md:p-8">
+                                <h3 class="italic-header mb-4 text-lg text-purple-300">5. Pontsz&aacute;m&iacute;t&aacute;s &Ouml;sszegz&eacute;s</h3>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-sm">
+                                        <thead>
+                                            <tr class="border-b border-purple-500/30">
+                                                <th class="p-2 text-left text-xs text-purple-300">F&aacute;zis</th>
+                                                <th class="p-2 text-right text-xs text-purple-300">Max / csapat</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-gray-300">
+                                            <tr class="border-b border-purple-500/10">
+                                                <td class="p-2">Week 1 &ndash; 7 &times; BO3</td>
+                                                <td class="p-2 text-right font-bold">7</td>
+                                            </tr>
+                                            <tr class="border-b border-purple-500/10">
+                                                <td class="p-2">Week 2 &ndash; 7 &times; BO3</td>
+                                                <td class="p-2 text-right font-bold">7</td>
+                                            </tr>
+                                            <tr class="border-b border-purple-500/10">
+                                                <td class="p-2">Week 3 &ndash; All-Kill BO7</td>
+                                                <td class="p-2 text-right font-bold">9</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-2 font-bold text-white">&Ouml;sszesen</td>
+                                                <td class="p-2 text-right font-bold text-white">23</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- 6. Schedule -->
+                            <div class="match-card p-5 md:p-8">
+                                <h3 class="italic-header mb-4 text-lg text-purple-300">6. &Uuml;temterv</h3>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-sm">
+                                        <thead>
+                                            <tr class="border-b border-purple-500/30">
+                                                <th class="p-2 text-left text-xs text-purple-300">H&eacute;t</th>
+                                                <th class="p-2 text-left text-xs text-purple-300">Esem&eacute;ny</th>
+                                                <th class="p-2 text-right text-xs text-purple-300">Form&aacute;tum</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-gray-300">
+                                            <tr class="border-b border-purple-500/10">
+                                                <td class="p-2">Week 1</td>
+                                                <td class="p-2">First Team Battle</td>
+                                                <td class="p-2 text-right">7 &times; BO3</td>
+                                            </tr>
+                                            <tr class="border-b border-purple-500/10">
+                                                <td class="p-2">Week 2</td>
+                                                <td class="p-2">Second Team Battle</td>
+                                                <td class="p-2 text-right">7 &times; BO3</td>
+                                            </tr>
+                                            <tr class="border-b border-purple-500/10">
+                                                <td class="p-2">Week 3</td>
+                                                <td class="p-2">All-Kill Championship</td>
+                                                <td class="p-2 text-right">BO7</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-2">Week 4</td>
+                                                <td class="p-2">Ace Match (ha d&ouml;ntetlen)</td>
+                                                <td class="p-2 text-right">BO5</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+
+            <!-- Footer -->
+            <footer class="bg-gray-950 border-t-2 border-purple-600/20 py-12 px-4">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid md:grid-cols-3 gap-12 mb-8">
+                        <div class="py-3">
+                            <img src="../images/logo.png" alt="HPS Logo" class="h-8 w-auto">
+                            <p class="text-gray-400 text-sm">Hungary's premier StarCraft 2 tournament series.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-base mb-4 purple-gradient-text uppercase tracking-wider">WATCH</h4>
+                            <ul class="space-y-3 text-gray-400 text-sm">
+                                <li><a href="https://www.youtube.com/@hungarianproseries" target="_blank" class="hover:text-purple-300 transition uppercase tracking-wide">YouTube</a></li>
+                                <li><a href="https://www.twitch.tv/winter_hu" target="_blank" class="hover:text-purple-300 transition uppercase tracking-wide">Twitch</a></li>
+                                <li><a href="https://liquipedia.net/starcraft2/Hungarian_Pro_Series" target="_blank" class="hover:text-purple-300 transition uppercase tracking-wide">Liquipedia</a></li>
+                            </ul>
+                        </div>
+
+                        <div id="contact">
+                            <h4 class="font-bold text-base mb-4 purple-gradient-text uppercase tracking-wider">CONTACT</h4>
+                            <p class="text-gray-400 text-xs mb-3 uppercase tracking-wide">For inquiries:</p>
+                            <a href="mailto:hungarianproseries@gmail.com" class="text-purple-400 hover:text-purple-300 transition font-semibold text-sm">
+                                hungarianproseries@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                        <p>&copy; <span id="year"></span> Hungarian Pro Series. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/champions-hungary.js"></script>
+    </body>
+</html>

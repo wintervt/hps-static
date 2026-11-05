@@ -1,0 +1,87 @@
+{
+    "playerPool": [
+        { "name": "Nihed", "race": "P" },
+        { "name": "Freeman", "race": "Z", "captain": "A" },
+        { "name": "RobbyG", "race": "T" },
+        { "name": "Psz", "race": "T", "captain": "B" },
+        { "name": "WiNtER", "race": "P" },
+        { "name": "mOsTeN", "race": "P" },
+        { "name": "Panda", "race": "Z" },
+        { "name": "Order", "race": "T" },
+        { "name": "Milkaa", "race": "P" },
+        { "name": "AZTEX", "race": "P" },
+        { "name": "Cereb", "race": "Z" },
+        { "name": "Cheeeeeeeese", "race": "Z" },
+        { "name": "JuGGer", "race": "T" },
+        { "name": "Sephisto", "race": "T" }
+    ],
+    "teams": {
+        "A": {
+            "name": "Team Freeman",
+            "captain": "Freeman",
+            "players": []
+        },
+        "B": {
+            "name": "Team Psz",
+            "captain": "Psz",
+            "players": []
+        }
+    },
+    "draft": {
+        "completed": false,
+        "order": ["A", "B", "B", "A", "A", "B", "B", "A", "A", "B", "B", "A"],
+        "picks": []
+    },
+    "mapPool": ["TBD Map 1", "TBD Map 2", "TBD Map 3", "TBD Map 4", "TBD Map 5", "TBD Map 6", "TBD Map 7"],
+    "weeks": {
+        "1": {
+            "label": "Week 1 \u2013 First Team Battle",
+            "format": "7 \u00d7 BO3",
+            "revealed": false,
+            "matches": [
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" }
+            ]
+        },
+        "2": {
+            "label": "Week 2 \u2013 Second Team Battle",
+            "format": "7 \u00d7 BO3",
+            "revealed": false,
+            "matches": [
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" }
+            ]
+        },
+        "3": {
+            "label": "Week 3 \u2013 All-Kill Championship",
+            "format": "BO7 All-Kill",
+            "revealed": false,
+            "lineupA": [],
+            "lineupB": [],
+            "games": []
+        },
+        "4": {
+            "label": "Week 4 \u2013 Ace Match",
+            "format": "BO5",
+            "required": false,
+            "revealed": false,
+            "aceA": null,
+            "aceB": null,
+            "match": { "p1": null, "p2": null, "s1": null, "s2": null }
+        }
+    },
+    "standings": {
+        "A": 0,
+        "B": 0
+    }
+}

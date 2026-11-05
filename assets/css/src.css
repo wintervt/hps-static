@@ -179,44 +179,54 @@ body {
     transition: opacity 0.15s ease;
 }
 
-/* BW Season 1 page */
-.bw-page .tab-button {
+/* BW Season 1 & Champions Hungary pages */
+.bw-page .tab-button,
+.ch-page .tab-button {
     @apply px-4 py-2 text-xs font-bold uppercase tracking-wider text-gray-400 transition-colors md:px-6 md:py-3 md:text-sm;
     cursor: pointer;
 }
-.bw-page .tab-button:hover {
+.bw-page .tab-button:hover,
+.ch-page .tab-button:hover {
     color: #c4b5fd;
 }
-.bw-page .tab-active {
+.bw-page .tab-active,
+.ch-page .tab-active {
     border-bottom: 2px solid #a855f7;
     color: #a855f7;
 }
 
-.bw-page .bracket-grid {
+.bw-page .bracket-grid,
+.ch-page .bracket-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
     align-items: start;
 }
 @media (max-width: 768px) {
-    .bw-page .bracket-grid {
+    .bw-page .bracket-grid,
+    .ch-page .bracket-grid {
         grid-template-columns: 1fr;
     }
 }
 
-.bw-page .bracket-match {
+.bw-page .bracket-match,
+.ch-page .bracket-match {
     @apply overflow-hidden rounded-lg border border-purple-500/20 bg-gray-800/60;
 }
-.bw-page .bracket-slot {
+.bw-page .bracket-slot,
+.ch-page .bracket-slot {
     @apply flex items-center gap-2 px-3 py-2 text-sm text-gray-300 transition-colors;
     border-bottom: 1px solid rgba(139, 92, 246, 0.1);
 }
-.bw-page .bracket-slot:last-child {
+.bw-page .bracket-slot:last-child,
+.ch-page .bracket-slot:last-child {
     border-bottom: none;
 }
-.bw-page .bracket-winner {
+.bw-page .bracket-winner,
+.ch-page .bracket-winner {
     @apply bg-purple-500/15 font-bold text-white;
 }
-.bw-page .bracket-score {
+.bw-page .bracket-score,
+.ch-page .bracket-score {
     @apply ml-auto flex-shrink-0 font-bold tabular-nums;
 }
