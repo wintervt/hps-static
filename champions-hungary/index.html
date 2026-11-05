@@ -112,6 +112,7 @@
                         <div class="relative z-10 mx-auto max-w-7xl text-center">
                             <h1 class="italic-header mb-2 text-4xl md:text-6xl">HPS CHAMPIONS HUNGARY</h1>
                             <p class="text-lg text-gray-400">2 Teams &middot; 14 Players &middot; 3 Weeks &middot; StarCraft 2 Mini Event</p>
+                            <p class="mt-2 text-sm text-gray-300">Prize Pool: <span class="italic-header text-white">40 000 HUF</span> &middot; Nov 16 &ndash; Dec 6</p>
                         </div>
                     </section>
 
@@ -166,17 +167,23 @@
                     <section data-panel="draft" class="px-4 py-12">
                         <div class="mx-auto max-w-4xl">
                             <h2 class="italic-header purple-gradient-text mb-2 text-center text-2xl">PLAYER DRAFT</h2>
-                            <p class="mb-8 text-center text-sm text-gray-400">Snake Draft &mdash; Freeman picks first, then Psz. Order reverses every two picks.</p>
+                            <p class="mb-8 text-center text-sm text-gray-400">Freeman picks first, Psz picks second and third, then captains alternate one pick each. Click a player to draft them.</p>
 
                             <!-- Draft Order -->
                             <div class="match-card p-4 md:p-6 mb-8">
-                                <h3 class="italic-header mb-4 text-base text-purple-300">DRAFT ORDER</h3>
+                                <div class="mb-4 flex items-center justify-between">
+                                    <h3 class="italic-header text-base text-purple-300">DRAFT ORDER</h3>
+                                    <div class="flex gap-2">
+                                        <button type="button" id="draft-undo" class="rounded-lg bg-gray-800/60 px-3 py-1 text-xs font-bold uppercase tracking-wider text-gray-200 transition hover:bg-purple-500/20 disabled:opacity-40">UNDO</button>
+                                        <button type="button" id="draft-reset" class="rounded-lg bg-gray-800/60 px-3 py-1 text-xs font-bold uppercase tracking-wider text-gray-200 transition hover:bg-purple-500/20 disabled:opacity-40">RESET</button>
+                                    </div>
+                                </div>
                                 <div id="draft-picks" class="space-y-2"></div>
                             </div>
 
                             <!-- Available Players -->
                             <div class="match-card p-4 md:p-6">
-                                <h3 class="italic-header mb-4 text-base text-purple-300">AVAILABLE PLAYER POOL</h3>
+                                <h3 class="italic-header mb-4 text-base text-purple-300">AVAILABLE PLAYER POOL (BY MMR)</h3>
                                 <div id="player-pool" class="grid grid-cols-2 md:grid-cols-3 gap-2"></div>
                             </div>
                         </div>
@@ -186,7 +193,14 @@
                     <section data-panel="week1" class="px-4 py-12">
                         <div class="mx-auto max-w-4xl">
                             <h2 class="italic-header purple-gradient-text mb-1 text-center text-2xl">WEEK 1 &ndash; FIRST TEAM BATTLE</h2>
-                            <p class="mb-8 text-center text-xs text-gray-500">7 individual matches &middot; BO3 &middot; Every player plays one match</p>
+                            <p class="mb-8 text-center text-xs text-gray-500">Nov 16 &ndash; 22 &middot; 7 individual matches &middot; BO3 &middot; Every player plays one match</p>
+                            <div class="match-card mb-6 p-4 md:p-6">
+                                <h3 class="italic-header mb-3 text-base text-purple-300">POINTS ON OFFER</h3>
+                                <ul class="space-y-1 text-sm text-gray-300">
+                                    <li class="flex justify-between"><span>Match win (BO3)</span><span class="font-bold text-white">1 pt</span></li>
+                                    <li class="flex justify-between"><span>Total this week</span><span class="font-bold text-white">7 pts</span></li>
+                                </ul>
+                            </div>
                             <div id="week1-matches" class="space-y-2"></div>
                             <div class="match-card mt-6 p-4 text-center">
                                 <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Week 1 Score</p>
@@ -205,7 +219,14 @@
                     <section data-panel="week2" class="px-4 py-12">
                         <div class="mx-auto max-w-4xl">
                             <h2 class="italic-header purple-gradient-text mb-1 text-center text-2xl">WEEK 2 &ndash; SECOND TEAM BATTLE</h2>
-                            <p class="mb-8 text-center text-xs text-gray-500">7 individual matches &middot; BO3 &middot; Every player plays one match</p>
+                            <p class="mb-8 text-center text-xs text-gray-500">Nov 23 &ndash; 30 &middot; 7 individual matches &middot; BO3 &middot; Every player plays one match</p>
+                            <div class="match-card mb-6 p-4 md:p-6">
+                                <h3 class="italic-header mb-3 text-base text-purple-300">POINTS ON OFFER</h3>
+                                <ul class="space-y-1 text-sm text-gray-300">
+                                    <li class="flex justify-between"><span>Match win (BO3)</span><span class="font-bold text-white">1 pt</span></li>
+                                    <li class="flex justify-between"><span>Total this week</span><span class="font-bold text-white">7 pts</span></li>
+                                </ul>
+                            </div>
                             <div id="week2-matches" class="space-y-2"></div>
                             <div class="match-card mt-6 p-4 text-center">
                                 <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Week 2 Score</p>
@@ -224,7 +245,15 @@
                     <section data-panel="week3" class="px-4 py-12">
                         <div class="mx-auto max-w-4xl">
                             <h2 class="italic-header purple-gradient-text mb-1 text-center text-2xl">WEEK 3 &ndash; ALL-KILL CHAMPIONSHIP</h2>
-                            <p class="mb-8 text-center text-xs text-gray-500">BO7 All-Kill &middot; 4 players per team &middot; Loser eliminated, winner stays</p>
+                            <p class="mb-8 text-center text-xs text-gray-500">Dec 6 (planned) &middot; BO7 All-Kill &middot; 4 players per team &middot; Loser eliminated, winner stays</p>
+                            <div class="match-card mb-6 p-4 md:p-6">
+                                <h3 class="italic-header mb-3 text-base text-purple-300">POINTS ON OFFER</h3>
+                                <ul class="space-y-1 text-sm text-gray-300">
+                                    <li class="flex justify-between"><span>Map win</span><span class="font-bold text-white">1 pt</span></li>
+                                    <li class="flex justify-between"><span>All-Kill win bonus</span><span class="font-bold text-white">+5 pts</span></li>
+                                    <li class="flex justify-between"><span>Max per team</span><span class="font-bold text-white">9 pts</span></li>
+                                </ul>
+                            </div>
 
                             <!-- Lineups -->
                             <div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -271,7 +300,7 @@
                                 <ul class="space-y-2 text-sm text-gray-300">
                                     <li><span class="text-purple-400 font-bold">Csapatok:</span> 2 csapat, 7 j&aacute;t&eacute;kos csapatonk&eacute;nt</li>
                                     <li><span class="text-purple-400 font-bold">Kapit&aacute;nyok:</span> Freeman (Team A) &amp; Psz (Team B)</li>
-                                    <li><span class="text-purple-400 font-bold">J&aacute;t&eacute;kos pool:</span> 14 j&aacute;t&eacute;kos, snake draft form&aacute;tumban</li>
+                                    <li><span class="text-purple-400 font-bold">J&aacute;t&eacute;kos pool:</span> 14 j&aacute;t&eacute;kos, draft form&aacute;tumban</li>
                                     <li><span class="text-purple-400 font-bold">Id&#337;tartam:</span> 3 h&eacute;t garant&aacute;lt, maximum 4 h&eacute;t</li>
                                 </ul>
                             </div>
@@ -280,13 +309,13 @@
                             <div class="match-card p-5 md:p-8">
                                 <h3 class="italic-header mb-4 text-lg text-purple-300">1. Kapit&aacute;nyok &eacute;s Draft</h3>
                                 <ul class="space-y-2 text-sm text-gray-300">
-                                    <li><span class="text-purple-400 font-bold">Snake draft</span> form&aacute;tum &mdash; Freeman kapja az els&#337; picket.</li>
-                                    <li><span class="text-purple-400 font-bold">Psz</span> kapja a m&aacute;sodik picket.</li>
-                                    <li>A sorrend minden k&eacute;t egym&aacute;st k&ouml;vet&#337; pick ut&aacute;n <span class="font-bold text-white">megfordul</span>.</li>
+                                    <li><span class="text-purple-400 font-bold">Freeman</span> kapja az els&#337; picket.</li>
+                                    <li><span class="text-purple-400 font-bold">Psz</span> kapja a m&aacute;sodik &eacute;s harmadik picket.</li>
+                                    <li>Ezt k&ouml;vet&#337;en a kapit&aacute;nyok <span class="font-bold text-white">felv&aacute;ltva, egyes&eacute;vel</span> v&aacute;lasztanak.</li>
                                     <li>A kapit&aacute;nyok automatikusan a saj&aacute;t csapatukba ker&uuml;lnek.</li>
                                 </ul>
                                 <div class="rounded-lg border border-purple-500/20 bg-purple-500/5 p-3 mt-4 text-xs text-gray-400">
-                                    Draft sorrend: Freeman, Psz, Psz, Freeman, Freeman, Psz, Psz, Freeman, Freeman, Psz, Psz, Freeman
+                                    Draft sorrend: Freeman, Psz, Psz, Freeman, Psz, Freeman, Psz, Freeman, Psz, Freeman, Psz, Freeman
                                 </div>
                             </div>
 
@@ -296,7 +325,7 @@
                                 <ul class="space-y-2 text-sm text-gray-300">
                                     <li><span class="text-purple-400 font-bold">Form&aacute;tum:</span> 7 egyéni meccs, mindegyik <span class="font-bold text-white">BO3</span></li>
                                     <li>Minden j&aacute;t&eacute;kos pontosan egy meccset j&aacute;tszik hetente.</li>
-                                    <li>A kapit&aacute;nyok d&ouml;ntik el a p&aacute;ros&iacute;t&aacute;sokat.</li>
+                                    <li>A kapit&aacute;nyok d&ouml;ntik el a p&aacute;ros&iacute;t&aacute;sokat a megadott mapek alapj&aacute;n: a szervez&#337; &aacute;ltal kiosztott kezd&#337; mapekhez rendelik hozz&aacute; a j&aacute;t&eacute;kosaikat.</li>
                                     <li><span class="text-purple-400 font-bold">Pontsz&aacute;m&iacute;t&aacute;s:</span> Minden meccs gy&#337;zelem = <span class="font-bold text-white">1 pont</span>. Maximum 7 pont hetente.</li>
                                 </ul>
 
@@ -305,7 +334,7 @@
                                     <li>1. A szervez&#337; adja a kezd&#337; mapet minden p&aacute;ros&iacute;t&aacute;shoz.</li>
                                     <li>2. Az els&#337; map vesztes v&aacute;lasztja a m&aacute;sodik mapet.</li>
                                     <li>3. 1-1-n&eacute;l a m&aacute;sodik map vesztes v&aacute;lasztja a harmadik mapet.</li>
-                                    <li>4. A 2. &eacute;s 3. map el&#337;tt a gy&#337;ztes vetoz&aacute;lhat egy mapet.</li>
+                                    <li>4. A 2. &eacute;s 3. map el&#337;tt a gy&#337;ztes vetozhat egy mapet.</li>
                                     <li>5. Ugyanaz a map nem j&aacute;tszhat&oacute; &uacute;jra egy szeri&aacute;n bel&uuml;l.</li>
                                 </ul>
                             </div>
@@ -315,8 +344,7 @@
                                 <h3 class="italic-header mb-4 text-lg text-purple-300">3. Week 3 &ndash; All-Kill BO7</h3>
                                 <ul class="space-y-2 text-sm text-gray-300">
                                     <li><span class="text-purple-400 font-bold">Form&aacute;tum:</span> 4 j&aacute;t&eacute;kos csapatonk&eacute;nt, <span class="font-bold text-white">All-Kill BO7</span></li>
-                                    <li>A kapit&aacute;nyok titokban &aacute;ll&iacute;tj&aacute;k &ouml;ssze a 4 f&#337;s felaz&aacute;st.</li>
-                                    <li>A veszt&#337; kiesik, a gy&#337;ztes marad.</li>
+                                    <li>A vesztes kiesik, a gy&#337;ztes marad.</li>
                                     <li>Az els&#337; csapat, amelyik kiejti mind a 4 ellenfelet, nyer.</li>
                                 </ul>
 
@@ -336,8 +364,8 @@
                                 <ul class="space-y-2 text-sm text-gray-300">
                                     <li>Csak <span class="font-bold text-white">pontegyenl&#337;s&eacute;g eset&eacute;n</span> sz&uuml;ks&eacute;ges.</li>
                                     <li><span class="text-purple-400 font-bold">Form&aacute;tum:</span> 1v1 <span class="font-bold text-white">BO5</span></li>
-                                    <li>Mindkét kapit&aacute;ny v&aacute;lasztja a k&eacute;pvisel&#337;j&eacute;t (ak&aacute;r saj&aacute;t mag&aacute;t is).</li>
-                                    <li>A gy&#337;ztes megszerzit a bajnoki c&iacute;met a csapat&aacute;nak.</li>
+                                    <li>Mindk&eacute;t kapit&aacute;ny v&aacute;laszt egy Ace match j&aacute;t&eacute;kost (ak&aacute;r saj&aacute;t mag&aacute;t is).</li>
+                                    <li>A gy&#337;ztes megszerzi a bajnoki c&iacute;met a csapat&aacute;nak.</li>
                                 </ul>
                             </div>
 
@@ -382,6 +410,7 @@
                                         <thead>
                                             <tr class="border-b border-purple-500/30">
                                                 <th class="p-2 text-left text-xs text-purple-300">H&eacute;t</th>
+                                                <th class="p-2 text-left text-xs text-purple-300">D&aacute;tum</th>
                                                 <th class="p-2 text-left text-xs text-purple-300">Esem&eacute;ny</th>
                                                 <th class="p-2 text-right text-xs text-purple-300">Form&aacute;tum</th>
                                             </tr>
@@ -389,26 +418,72 @@
                                         <tbody class="text-gray-300">
                                             <tr class="border-b border-purple-500/10">
                                                 <td class="p-2">Week 1</td>
+                                                <td class="p-2">november 16&ndash;22.</td>
                                                 <td class="p-2">First Team Battle</td>
                                                 <td class="p-2 text-right">7 &times; BO3</td>
                                             </tr>
                                             <tr class="border-b border-purple-500/10">
                                                 <td class="p-2">Week 2</td>
+                                                <td class="p-2">november 23&ndash;30.</td>
                                                 <td class="p-2">Second Team Battle</td>
                                                 <td class="p-2 text-right">7 &times; BO3</td>
                                             </tr>
                                             <tr class="border-b border-purple-500/10">
                                                 <td class="p-2">Week 3</td>
+                                                <td class="p-2">december 6. (tervezett)</td>
                                                 <td class="p-2">All-Kill Championship</td>
                                                 <td class="p-2 text-right">BO7</td>
                                             </tr>
                                             <tr>
                                                 <td class="p-2">Week 4</td>
+                                                <td class="p-2">TBD</td>
                                                 <td class="p-2">Ace Match (ha d&ouml;ntetlen)</td>
                                                 <td class="p-2 text-right">BO5</td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                </div>
+                            </div>
+
+                            <!-- 7. Díjazás -->
+                            <div class="match-card p-5 md:p-8">
+                                <h3 class="italic-header mb-4 text-lg text-purple-300">7. D&iacute;jaz&aacute;s (Prize Pool)</h3>
+                                <p class="mb-3 text-sm text-gray-300">&Ouml;sszd&iacute;jaz&aacute;s: <span class="italic-header text-lg text-white">40 000 HUF</span></p>
+                                <ul class="space-y-1 text-sm text-gray-300">
+                                    <li>Gy&#337;ztes csapat: <span class="font-bold text-yellow-300">5 000 HUF / j&aacute;t&eacute;kos</span> (7 &times; 5 000 HUF)</li>
+                                    <li>MVP b&oacute;nusz: <span class="font-bold text-yellow-300">5 000 HUF</span></li>
+                                </ul>
+                                <p class="mt-3 text-xs text-gray-500">Kifizet&eacute;s: A nyerem&eacute;nyek PayPal vagy Revolut &uacute;tj&aacute;n ker&uuml;lnek &aacute;tutal&aacute;sra a verseny lez&aacute;r&aacute;s&aacute;t k&ouml;vet&#337;en.</p>
+                            </div>
+
+                            <!-- 8. Fair Play -->
+                            <div class="match-card p-5 md:p-8">
+                                <h3 class="italic-header mb-4 text-lg text-purple-300">8. Magatart&aacute;si Szab&aacute;lyzat &amp; Fair Play</h3>
+                                <p class="mb-4 text-sm text-gray-400">A versenyt a tisztelet &eacute;s a sportszer&#369;s&eacute;g szellem&eacute;ben rendezz&uuml;k meg. A szab&aacute;lyok in-game, Discordon &eacute;s a hivatalos stream chaten egyar&aacute;nt &eacute;rv&eacute;nyesek!</p>
+
+                                <h4 class="mb-2 text-sm font-bold text-gray-200">8.1. Elv&aacute;rt viselked&eacute;s</h4>
+                                <p class="mb-4 text-sm text-gray-300">Elv&aacute;rt a sportszer&#369;, tiszteletteljes magatart&aacute;s mind gy&#337;zelem, mind veres&eacute;g ut&aacute;n.</p>
+
+                                <h4 class="mb-2 text-sm font-bold text-gray-200">8.2. Meccs k&ouml;zbeni &eacute;s platformok k&ouml;z&ouml;tti kommunik&aacute;ci&oacute;</h4>
+                                <p class="mb-2 text-xs font-bold uppercase tracking-wider text-red-400">TILOS &eacute;s b&uuml;ntetend&#337;:</p>
+                                <ul class="space-y-1 text-sm text-gray-300">
+                                    <li>&bull; In-game chat haszn&aacute;lata k&ouml;zvet&iacute;tett m&eacute;rk&#337;z&eacute;s k&ouml;zben provok&aacute;ci&oacute;ra, spammei&eacute;sre vagy BM-re (Bad Manner).</li>
+                                    <li>&bull; Ellenfél vagy streamer szid&aacute;sa, zaklat&aacute;sa.</li>
+                                    <li>&bull; K&eacute;rd&#337;jelez&eacute;s, provok&aacute;ci&oacute; &eacute;s BM b&aacute;rmilyen kapcsol&oacute;d&oacute; fel&uuml;leten (pl. In-game, Discord, Stream chat).</li>
+                                    <li>&bull; B&aacute;rmilyen jelleg&#369; csal&aacute;s vagy a verseny szab&aacute;lyainak sz&aacute;nd&eacute;kos kij&aacute;tsz&aacute;sa.</li>
+                                </ul>
+                            </div>
+
+                            <!-- 9. Szankciók -->
+                            <div class="match-card p-5 md:p-8">
+                                <h3 class="italic-header mb-4 text-lg text-red-400">9. Szankci&oacute;k &eacute;s B&uuml;ntet&eacute;sek</h3>
+                                <p class="mb-3 text-sm text-gray-400">B&aacute;rmilyen szab&aacute;lyszeg&eacute;s vagy nem megfelel&#337; viselked&eacute;s eset&eacute;n a k&ouml;vetkez&#337; szankci&oacute;k l&eacute;pnek &eacute;letbe:</p>
+                                <ul class="mb-4 space-y-2 text-sm text-gray-300">
+                                    <li><span class="font-bold text-yellow-300">1. alkalom:</span> WARNING (Figyelmeztet&eacute;s)</li>
+                                    <li><span class="font-bold text-red-400">2. alkalom:</span> KIZ&Aacute;R&Aacute;S a versenyb&#337;l</li>
+                                </ul>
+                                <div class="rounded-lg border border-red-500/30 bg-red-500/10 p-3">
+                                    <p class="text-xs text-red-300"><span class="font-bold">Adminisztr&aacute;tori jogk&ouml;r:</span> S&uacute;lyos, kir&iacute;v&oacute; vagy sz&aacute;nd&eacute;kosan rosszindulat&uacute; esetben a verseny adminisztr&aacute;tora fenntartja a jogot az <span class="font-bold">azonnali kiz&aacute;r&aacute;sra</span>, el&#337;zetes figyelmeztet&eacute;s (warning) n&eacute;lk&uuml;l is.</p>
                                 </div>
                             </div>
                         </div>

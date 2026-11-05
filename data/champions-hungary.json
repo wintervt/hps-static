@@ -1,19 +1,19 @@
 {
     "playerPool": [
-        { "name": "Nihed", "race": "P" },
+        { "name": "Nihed", "race": "P", "mmr": 5501 },
         { "name": "Freeman", "race": "Z", "captain": "A" },
-        { "name": "RobbyG", "race": "T" },
+        { "name": "RobbyG", "race": "T", "mmr": 5015 },
         { "name": "Psz", "race": "T", "captain": "B" },
-        { "name": "WiNtER", "race": "P" },
-        { "name": "mOsTeN", "race": "P" },
-        { "name": "Panda", "race": "Z" },
-        { "name": "Order", "race": "T" },
-        { "name": "Milkaa", "race": "P" },
-        { "name": "AZTEX", "race": "P" },
-        { "name": "Cereb", "race": "Z" },
-        { "name": "Cheeeeeeeese", "race": "Z" },
-        { "name": "JuGGer", "race": "T" },
-        { "name": "Sephisto", "race": "T" }
+        { "name": "WiNtER", "race": "P", "mmr": 4895 },
+        { "name": "mOsTeN", "race": "P", "mmr": 4875 },
+        { "name": "Panda", "race": "Z", "mmr": 4605 },
+        { "name": "Order", "race": "T", "mmr": 4590 },
+        { "name": "Milkaa", "race": "P", "mmr": 4446 },
+        { "name": "AZTEX", "race": "P", "mmr": 4347 },
+        { "name": "Cereb", "race": "Z", "mmr": 4149 },
+        { "name": "Cheeeeeeeese", "race": "Z", "mmr": 3733 },
+        { "name": "JuGGer", "race": "T", "mmr": 4828 },
+        { "name": "Sephisto", "race": "T", "mmr": 4571 }
     ],
     "teams": {
         "A": {
@@ -29,7 +29,7 @@
     },
     "draft": {
         "completed": false,
-        "order": ["A", "B", "B", "A", "A", "B", "B", "A", "A", "B", "B", "A"],
+        "order": ["A", "B", "B", "A", "B", "A", "B", "A", "B", "A", "B", "A"],
         "picks": []
     },
     "mapPool": ["TBD Map 1", "TBD Map 2", "TBD Map 3", "TBD Map 4", "TBD Map 5", "TBD Map 6", "TBD Map 7"],

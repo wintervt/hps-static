@@ -6,6 +6,8 @@
         R: '../images/random-white.png',
     };
 
+    var DRAFT_STORAGE_KEY = 'hps-ch-draft-picks';
+
     function esc(value) {
         return String(value)
             .replace(/&/g, '&amp;')
@@ -59,14 +61,69 @@
             return playerMap[name] ? playerMap[name].race : null;
         }
 
+        var picks = loadPicks(data);
+
+        function renderDraftAndTeams() {
+            renderTeams(data, picks, playerRace);
+            renderDraft(data, picks, playerRace);
+        }
+
+        document.getElementById('player-pool').addEventListener('click', function (e) {
+            var btn = e.target.closest('[data-pick]');
+            if (!btn || picks.length >= data.draft.order.length) return;
+            picks.push(btn.getAttribute('data-pick'));
+            savePicks(picks);
+            renderDraftAndTeams();
+        });
+
+        document.getElementById('draft-undo').addEventListener('click', function () {
+            if (!picks.length) return;
+            picks.pop();
+            savePicks(picks);
+            renderDraftAndTeams();
+        });
+
+        document.getElementById('draft-reset').addEventListener('click', function () {
+            if (!picks.length || !window.confirm('Reset the draft?')) return;
+            picks.length = 0;
+            savePicks(picks);
+            renderDraftAndTeams();
+        });
+
         renderStandings(data);
-        renderTeams(data, playerRace);
-        renderDraft(data, playerRace);
+        renderDraftAndTeams();
         renderWeekMatches('week1-matches', data.weeks['1'], playerRace);
         renderWeekScore('w1', data.weeks['1'], data.teams);
         renderWeekMatches('week2-matches', data.weeks['2'], playerRace);
         renderWeekScore('w2', data.weeks['2'], data.teams);
         renderAllKill(data, playerRace);
+    }
+
+    // ─── Draft State ────────────────────────────────────────
+    function loadPicks(data) {
+        try {
+            var stored = JSON.parse(window.localStorage.getItem(DRAFT_STORAGE_KEY));
+            if (Array.isArray(stored) && stored.length <= data.draft.order.length) {
+                var valid = {};
+                data.playerPool.forEach(function (p) {
+                    if (!p.captain) valid[p.name] = true;
+                });
+                var seen = {};
+                var ok = stored.every(function (name) {
+                    if (typeof name !== 'string' || !valid[name] || seen[name]) return false;
+                    seen[name] = true;
+                    return true;
+                });
+                if (ok) return stored;
+            }
+        } catch (e) {}
+        return data.draft.picks.slice();
+    }
+
+    function savePicks(picks) {
+        try {
+            window.localStorage.setItem(DRAFT_STORAGE_KEY, JSON.stringify(picks));
+        } catch (e) {}
     }
 
     // ─── Standings ──────────────────────────────────────────
@@ -88,45 +145,31 @@
         '</div>';
     }
 
-    function renderTeams(data, playerRace) {
-        var teamA = data.teams.A;
-        var teamB = data.teams.B;
+    function renderTeams(data, picks, playerRace) {
+        var order = data.draft.order;
 
-        var htmlA = playerRow(teamA.captain, playerRace(teamA.captain)) +
-            '<span class="text-[10px] uppercase tracking-wider text-purple-400 font-bold">Captain</span>';
+        ['A', 'B'].forEach(function (key) {
+            var team = data.teams[key];
+            var html = playerRow(team.captain, playerRace(team.captain)) +
+                '<span class="text-[10px] uppercase tracking-wider text-purple-400 font-bold">Captain</span>';
 
-        if (teamA.players.length > 0) {
-            teamA.players.forEach(function (name) {
-                htmlA += playerRow(name, playerRace(name));
+            var players = picks.filter(function (name, i) {
+                return order[i] === key;
             });
-        } else {
-            for (var i = 0; i < 6; i++) {
-                htmlA += playerRow('TBD', null);
-            }
-        }
-
-        var htmlB = playerRow(teamB.captain, playerRace(teamB.captain)) +
-            '<span class="text-[10px] uppercase tracking-wider text-purple-400 font-bold">Captain</span>';
-
-        if (teamB.players.length > 0) {
-            teamB.players.forEach(function (name) {
-                htmlB += playerRow(name, playerRace(name));
+            players.forEach(function (name) {
+                html += playerRow(name, playerRace(name));
             });
-        } else {
-            for (var j = 0; j < 6; j++) {
-                htmlB += playerRow('TBD', null);
+            for (var i = players.length; i < 6; i++) {
+                html += playerRow('TBD', null);
             }
-        }
 
-        document.getElementById('roster-a').innerHTML = htmlA;
-        document.getElementById('roster-b').innerHTML = htmlB;
+            document.getElementById('roster-' + key.toLowerCase()).innerHTML = html;
+        });
     }
 
     // ─── Draft ──────────────────────────────────────────────
-    function renderDraft(data, playerRace) {
-        var draft = data.draft;
-        var order = draft.order;
-        var picks = draft.picks;
+    function renderDraft(data, picks, playerRace) {
+        var order = data.draft.order;
 
         var html = '';
         for (var i = 0; i < order.length; i++) {
@@ -147,6 +190,8 @@
                     html += '<img src="' + raceIcon(race) + '" class="inline h-4 w-4 object-contain mr-1" alt="">';
                 }
                 html += esc(picked);
+            } else if (i === picks.length) {
+                html += '<span class="text-white">On the clock...</span>';
             } else {
                 html += '<span class="text-gray-500">Awaiting pick...</span>';
             }
@@ -162,16 +207,20 @@
         drafted[data.teams.A.captain] = true;
         drafted[data.teams.B.captain] = true;
 
+        var available = data.playerPool
+            .filter(function (p) { return !drafted[p.name]; })
+            .sort(function (a, b) { return (b.mmr || 0) - (a.mmr || 0); });
+
         var poolHtml = '';
-        data.playerPool.forEach(function (p) {
-            if (drafted[p.name]) return;
+        available.forEach(function (p) {
             var icon = p.race
                 ? '<img src="' + raceIcon(p.race) + '" class="h-4 w-4 object-contain" alt="">'
                 : '<span class="inline-block h-4 w-4 rounded-full bg-gray-700"></span>';
-            poolHtml += '<div class="flex items-center gap-2 rounded-lg bg-gray-800/40 p-2">' +
+            poolHtml += '<button type="button" data-pick="' + esc(p.name) + '" class="flex items-center gap-2 rounded-lg bg-gray-800/40 p-2 text-left transition hover:bg-purple-500/20">' +
                 icon +
                 '<span class="text-sm text-gray-200">' + esc(p.name) + '</span>' +
-            '</div>';
+                '<span class="ml-auto text-xs font-bold text-white">' + esc(p.mmr || '') + '</span>' +
+            '</button>';
         });
 
         if (!poolHtml) {
@@ -179,16 +228,13 @@
         }
 
         document.getElementById('player-pool').innerHTML = poolHtml;
+
+        document.getElementById('draft-undo').disabled = picks.length === 0;
+        document.getElementById('draft-reset').disabled = picks.length === 0;
     }
 
     // ─── Week Matches ───────────────────────────────────────
     function renderWeekMatches(targetId, week, playerRace) {
-        if (!week.revealed) {
-            document.getElementById(targetId).innerHTML =
-                '<div class="match-card p-6 text-center"><p class="text-sm text-gray-500">Matchups will be revealed after the draft</p></div>';
-            return;
-        }
-
         var html = '';
         (week.matches || []).forEach(function (match) {
             var p1 = match.p1 || 'TBD';
@@ -276,8 +322,11 @@
 
         // Games
         var gamesHtml = '';
-        if (week3.games && week3.games.length > 0) {
-            week3.games.forEach(function (game, idx) {
+        var games = week3.games && week3.games.length > 0 ? week3.games : [];
+        if (!games.length) {
+            for (var g = 0; g < 7; g++) games.push({ p1: null, p2: null });
+        }
+        games.forEach(function (game, idx) {
                 var p1 = game.p1 || 'TBD';
                 var p2 = game.p2 || 'TBD';
                 var r1 = playerRace(p1);
@@ -312,10 +361,7 @@
                             icon2 +
                         '</div>' +
                     '</div>';
-            });
-        } else {
-            gamesHtml = '<p class="text-sm text-gray-500 text-center py-4">All-Kill games will be revealed during Week 3</p>';
-        }
+        });
         document.getElementById('allkill-games').innerHTML = gamesHtml;
 
         // All-Kill score
