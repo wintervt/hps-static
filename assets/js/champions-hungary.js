@@ -391,8 +391,8 @@
             week3.lineupA.forEach(function (n) { if (eliminated[n]) eliminatedA++; });
             week3.lineupB.forEach(function (n) { if (eliminated[n]) eliminatedB++; });
 
-            if (eliminatedB >= 4) mapA += 5; // Team A wins, +5 bonus
-            if (eliminatedA >= 4) mapB += 5; // Team B wins, +5 bonus
+            if (eliminatedB >= 4) mapA += 3; // Team A wins, +3 bonus
+            if (eliminatedA >= 4) mapB += 3; // Team B wins, +3 bonus
 
             document.getElementById('ak-score-a').textContent = mapA;
             document.getElementById('ak-score-b').textContent = mapB;
