@@ -280,8 +280,8 @@
         var scoreB = 0;
         week.matches.forEach(function (m) {
             if (m.s1 == null || m.s2 == null) return;
-            if (m.s1 > m.s2) scoreA++;
-            else if (m.s2 > m.s1) scoreB++;
+            if (m.s1 >= 1) scoreA++;
+            if (m.s2 >= 1) scoreB++;
         });
 
         document.getElementById(prefix + '-score-a').textContent = scoreA;

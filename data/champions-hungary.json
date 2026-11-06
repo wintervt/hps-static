@@ -36,7 +36,7 @@
     "weeks": {
         "1": {
             "label": "Week 1 \u2013 First Team Battle",
-            "format": "7 \u00d7 BO3",
+            "format": "7 \u00d7 BO2",
             "revealed": false,
             "matches": [
                 { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
@@ -50,7 +50,7 @@
         },
         "2": {
             "label": "Week 2 \u2013 Second Team Battle",
-            "format": "7 \u00d7 BO3",
+            "format": "7 \u00d7 BO2",
             "revealed": false,
             "matches": [
                 { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
