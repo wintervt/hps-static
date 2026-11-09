@@ -29,7 +29,7 @@
     },
     "draft": {
         "completed": false,
-        "order": ["A", "B", "B", "A", "B", "A", "B", "A", "A", "B", "B", "A"],
+        "order": ["A", "B", "B", "A", "B", "A", "B", "A", "B", "A", "B", "A"],
         "picks": []
     },
     "mapPool": ["TBD Map 1", "TBD Map 2", "TBD Map 3", "TBD Map 4", "TBD Map 5", "TBD Map 6", "TBD Map 7"],
