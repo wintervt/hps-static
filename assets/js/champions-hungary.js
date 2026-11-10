@@ -153,9 +153,11 @@
             var html = playerRow(team.captain, playerRace(team.captain)) +
                 '<span class="text-[10px] uppercase tracking-wider text-purple-400 font-bold">Captain</span>';
 
-            var players = picks.filter(function (name, i) {
-                return order[i] === key;
-            });
+            var players = team.players.length
+                ? team.players
+                : picks.filter(function (name, i) {
+                    return order[i] === key;
+                });
             players.forEach(function (name) {
                 html += playerRow(name, playerRace(name));
             });
@@ -245,6 +247,10 @@
             var score = (match.s1 != null && match.s2 != null)
                 ? '<span class="italic-header text-lg md:text-xl">' + match.s1 + ' <span class="text-purple-400">-</span> ' + match.s2 + '</span>'
                 : '<span class="text-xs text-gray-500">vs</span>';
+
+            if (match.startMap && match.startMap !== 'TBD') {
+                score += '<div class="mt-1 text-[10px] font-bold uppercase tracking-wider text-purple-300">' + esc(match.startMap) + '</div>';
+            }
 
             var icon1 = r1
                 ? '<img src="' + raceIcon(r1) + '" class="h-5 w-5 flex-shrink-0 object-contain" alt="">'

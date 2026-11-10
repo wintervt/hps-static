@@ -19,33 +19,33 @@
         "A": {
             "name": "Team Freeman",
             "captain": "Freeman",
-            "players": []
+            "players": ["Nihed", "mOsTeN", "Order", "Milkaa", "Cereb", "Cheeeeeeeese"]
         },
         "B": {
             "name": "Team Psz",
             "captain": "Psz",
-            "players": []
+            "players": ["WiNtER", "RobbyG", "JuGGer", "Panda", "AZTEX", "Sephisto"]
         }
     },
     "draft": {
-        "completed": false,
+        "completed": true,
         "order": ["A", "B", "B", "A", "B", "A", "B", "A", "B", "A", "B", "A"],
         "picks": []
     },
-    "mapPool": ["TBD Map 1", "TBD Map 2", "TBD Map 3", "TBD Map 4", "TBD Map 5", "TBD Map 6", "TBD Map 7"],
+    "mapPool": ["Washout", "At Eternity's Edge", "Rorschach", "Lockdown", "Old Sun Temple", "Sanctuary III", "Rainfall"],
     "weeks": {
         "1": {
             "label": "Week 1 \u2013 First Team Battle",
             "format": "7 \u00d7 BO2",
             "revealed": false,
             "matches": [
-                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
-                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
-                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
-                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
-                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
-                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" },
-                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "TBD" }
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "Washout" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "At Eternity's Edge" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "Rorschach" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "Lockdown" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "Old Sun Temple" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "Sanctuary III" },
+                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "Rainfall" }
             ]
         },
         "2": {
