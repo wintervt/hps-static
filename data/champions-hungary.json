@@ -37,15 +37,15 @@
         "1": {
             "label": "Week 1 \u2013 First Team Battle",
             "format": "7 \u00d7 BO2",
-            "revealed": false,
+            "revealed": true,
             "matches": [
-                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "Washout" },
-                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "At Eternity's Edge" },
-                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "Rorschach" },
-                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "Lockdown" },
-                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "Old Sun Temple" },
-                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "Sanctuary III" },
-                { "p1": null, "p2": null, "s1": null, "s2": null, "startMap": "Rainfall" }
+                { "p1": "Cereb", "p2": "JuGGer", "s1": null, "s2": null, "startMap": "Washout" },
+                { "p1": "mOsTeN", "p2": "Psz", "s1": null, "s2": null, "startMap": "At Eternity's Edge" },
+                { "p1": "Cheeeeeeeese", "p2": "RobbyG", "s1": null, "s2": null, "startMap": "Rorschach" },
+                { "p1": "Order", "p2": "Sephisto", "s1": null, "s2": null, "startMap": "Lockdown" },
+                { "p1": "Milkaa", "p2": "Panda", "s1": null, "s2": null, "startMap": "Old Sun Temple" },
+                { "p1": "Nihed", "p2": "AZTEX", "s1": null, "s2": null, "startMap": "Sanctuary III" },
+                { "p1": "Freeman", "p2": "WiNtER", "s1": null, "s2": null, "startMap": "Rainfall" }
             ]
         },
         "2": {
