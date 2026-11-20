@@ -69,7 +69,7 @@
             { "p1": "EaGLe", "p2": "Skzlime", "s1": 1, "s2": 2 },
             { "p1": "vOrti", "p2": "Itzak_Rosenberg", "s1": 2, "s2": 1 },
             { "p1": "Fazek", "p2": "Capybara", "s1": 2, "s2": 0 },
-            { "p1": "Psz", "p2": "JustRoids", "s1": null, "s2": null },
+            { "p1": "Psz", "p2": "JustRoids", "s1": 1, "s2": 2 },
             { "p1": "Spezza", "p2": "Milkaa", "s1": 2, "s2": 0 },
             { "p1": "JuGGer", "p2": "OwL!", "s1": 0, "s2": 2 }
         ],
