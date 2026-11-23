@@ -24,6 +24,8 @@
     var tabButtons = document.querySelectorAll('[data-tab]');
     var panels = document.querySelectorAll('[data-panel]');
 
+    var validTabs = Array.from(tabButtons).map(function (btn) { return btn.getAttribute('data-tab'); });
+
     function showTab(key) {
         tabButtons.forEach(function (btn) {
             btn.classList.toggle('tab-active', btn.getAttribute('data-tab') === key);
@@ -31,6 +33,7 @@
         panels.forEach(function (panel) {
             panel.style.display = panel.getAttribute('data-panel') === key ? '' : 'none';
         });
+        window.location.hash = key;
     }
 
     tabButtons.forEach(function (btn) {
@@ -39,7 +42,8 @@
         });
     });
 
-    showTab('teams');
+    var initialTab = window.location.hash.replace('#', '');
+    showTab(validTabs.indexOf(initialTab) !== -1 ? initialTab : 'teams');
 
     // ─── Data ────────────────────────────────────────────────
     fetch('../data/champions-hungary.json')
