@@ -294,8 +294,19 @@
             if (m.s2 >= 1) scoreB++;
         });
 
+        if (week.penalty) {
+            if (week.penalty.team === 'A') scoreA -= week.penalty.points;
+            if (week.penalty.team === 'B') scoreB -= week.penalty.points;
+        }
+
         document.getElementById(prefix + '-score-a').textContent = scoreA;
         document.getElementById(prefix + '-score-b').textContent = scoreB;
+
+        var penaltyEl = document.getElementById(prefix + '-penalty');
+        if (penaltyEl && week.penalty) {
+            penaltyEl.textContent = week.penalty.note;
+            penaltyEl.classList.remove('hidden');
+        }
     }
 
     // ─── All-Kill ───────────────────────────────────────────
