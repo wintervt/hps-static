@@ -75,7 +75,7 @@
         ],
         "5": [
             { "p1": "Advil", "p2": "non", "s1": null, "s2": null },
-            { "p1": "Ace", "p2": "vOrti", "s1": 2, "s2": 1 },
+            { "p1": "Ace", "p2": "vOrti", "s1": null, "s2": null },
             { "p1": "EaGLe", "p2": "Fazek", "s1": 1, "s2": 2 },
             { "p1": "WiNtER", "p2": "Spezza", "s1": 2, "s2": 0 },
             { "p1": "Itzak_Rosenberg", "p2": "JuGGer", "s1": 2, "s2": 1 },
